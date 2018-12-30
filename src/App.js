@@ -19,13 +19,15 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Navigation />
-            <Route exact={true} path="/" component={Main}/>
-            <Route path="/about" component={About}/>
-            <Route path="/upcoming" component={Upcoming}/>
-            <Route path="/past" component={Past}/>
-            <Route path="/contact" component={Contact}/>
-            <Route path="/donate" component={Donate}/>
-            <Route path = "/gallery2018" component={Gallery2018}/>
+            <div className = "main-content">
+              <Route exact={true} path="/" component={Main}/>
+              <Route path="/about" component={About}/>
+              <Route path="/upcoming" component={Upcoming}/>
+              <Route path="/past" component={Past}/>
+              <Route path="/contact" component={Contact}/>
+              <Route path="/donate" component={Donate}/>
+              <Route path = "/gallery2018" component={Gallery2018}/>
+            </div>
           </div>
         </BrowserRouter>
         <div className="copyright text-center" id="footer">© 2018 Aligarh Alumni Association New York. All Rights Reserved.</div>

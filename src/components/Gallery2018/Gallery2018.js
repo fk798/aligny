@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ImageGallery from 'react-image-gallery';
-import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+//import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+import "../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 import "./Gallery2018.css";
 
 class Gallery2018 extends Component {
@@ -77,7 +78,11 @@ class Gallery2018 extends Component {
         ]
 
     return (
-      <ImageGallery items={images} />
+      <React.Fragment>
+        <h1>Sir Syed Day Mushaira 2018</h1>
+        <br></br>
+        <ImageGallery items={images} />
+      </React.Fragment>
     );
   }
 

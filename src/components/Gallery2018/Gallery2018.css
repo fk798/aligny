@@ -1,6 +1,8 @@
 .image-gallery-slide img {
-    width: 500px;
+    width: 600px;
   }
 .image-gallery-slides {
-    height: 350px;
+    height: 400px;
+    text-align: center;
+
 }

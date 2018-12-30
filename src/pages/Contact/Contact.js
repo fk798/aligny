@@ -1,28 +1,36 @@
 import React, { Component } from "react";
+import { Button } from "react-materialize";
 
 class Contact extends Component {
     render() {
         return (
-            <React.Fragment>
-                <div className="container-fluid">
-                    <form>
-                        <div className="form-group">
-                            <label>Name</label>
-                            <input type="name" className="form-control" id="name" placeholder="Name" />
+                <div className="row">
+                    <form className="col s12">
+                        <div className="row">
+                            <div className="input-field col s6">
+                                <input id="first_name" type="text" className="validate" />
+                                <label for="first_name">First Name</label>
+                            </div>
+                            <div className="input-field col s6">
+                                <input id="last_name" type="text" className="validate" />
+                                <label for="last_name">Last Name</label>
+                            </div>
                         </div>
-                        <div className="form-group">
-                            <label htmlFor="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control" id="email" aria-describedby="email" placeholder="Enter email" />
-                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <div className="row">
+                            <div className="input-field col s12">
+                                <input id="email" type="text" className="validate" />
+                                <label for="email">Email</label>
+                            </div>
                         </div>
-                        <div className="form-group">
-                            <label htmlFor="subject">Subject</label>
-                            <input type="subject" className="form-control" id="subject" placeholder="Your message" />
+                        <div className="row">
+                            <div className="input-field col s12">
+                                <input id="comments" type="text" className="validate" />
+                                <label for="comments">Message</label>
+                            </div>
                         </div>
-                        <button type="submit" className="btn">Submit</button>
+                        <Button>Submit</Button>
                     </form>
                 </div>
-            </React.Fragment>
         )
     }
 }
