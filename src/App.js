@@ -29,6 +29,11 @@ class App extends Component {
               <Route path="/tax" render={() => (
                 <div>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794 </div>
               )}/>
+              <Route path="/membership" render={() => (<React.Fragment>
+                <div>1) Lifetime Member : Free access to all AAANY activities and publications.</div>
+                <div>2) Regular Member : Discounted prices on all AAANY activities and publications (One Year).</div>
+                </React.Fragment>
+              )}/>
             </div>
           </div>
         </BrowserRouter>

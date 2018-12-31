@@ -40,7 +40,7 @@ class Navigation extends Component {
                     </div>
                 </div>
                 <br></br>
-                <Navbar right className="brown" style={{paddingRight: "8%"}}>
+                <Navbar right className="brown">
                     <li><NavLink to="/"><Button style={capital} className = "light-green darken-2">Home</Button></NavLink></li>
                     <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
                             <NavLink to="/goals" style={color}>About AAANY</NavLink>
@@ -54,6 +54,7 @@ class Navigation extends Component {
                             <NavLink to="/past" style={color}>Past Events</NavLink>
                         </Dropdown></li>
                     <li><NavLink to="/news"><Button style={capital} className = "light-green darken-2">AMU News</Button></NavLink></li>
+                    <li><NavLink to="/membership"><Button style={capital} className = "light-green darken-2">Membership</Button></NavLink></li>
                     <li><NavLink to="/contact"><Button style={capital} className = "light-green darken-2">Contact Us</Button></NavLink></li>
                     <li><NavLink to="/donate"><Button style={capital} className = "light-green darken-2">Donate</Button></NavLink></li>
                     <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Resources</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
