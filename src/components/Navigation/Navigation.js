@@ -1,20 +1,75 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Navbar, NavItem, Dropdown, Button } from "react-materialize"
+import { Link, NavLink } from "react-router-dom";
+import { Navbar, NavItem, Dropdown, Button, Icon } from "react-materialize";
+import logo from "../images/logo.png"
+import "./Navigation.css"
 
 const size = {
     width: "500px"
 }
 
 const color = {
-    backgroundColor: "red"
+    color: "black",
+    whiteSpace: "nowrap",
+    paddingLeft: "10px"
+}
+
+const logoSize = {
+    width: "20%"
+}
+
+const brandHeader = {
+    paddingLeft: "50px"
+}
+
+const capital = {
+
+    textTransform: "none"
 }
 
 class Navigation extends Component {
     render() {
         return (
             <React.Fragment>
-                <Navbar brand='Aligarh Alumni Association of NY' right className="teal lighten-2">
+                <div>
+                    <a href="/"><img src={logo} style={logoSize}></img></a>
+                    <div style={{float: "right", display: "inline-block"}}>
+                        Aligarh Alumni Association of New York
+                        <p>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794</p>
+                    </div>
+                </div>
+                <br></br>
+                <Navbar brand='AAANY' right className="brown" style={brandHeader}>
+                    <li><NavLink to="/"><Button style={capital} className = "light-green darken-2">Home</Button></NavLink></li>
+                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
+                            <NavLink to="/goals" style={color}>About AAANY</NavLink>
+                            <NavLink to="/team" style={color}>Our Team</NavLink>
+                            <NavLink to="/vision" style={color}>Vision</NavLink>
+                            <NavLink to="/goals" style={color}>Goals</NavLink>
+                            <NavLink to="/goals" style={color}>Federal Tax Exempt</NavLink>
+                            <NavLink to="/goals" style={color}>Privacy Policy</NavLink>
+                        </Dropdown></li>
+                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Events</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
+                            <NavLink to="/upcoming" style={color}>Upcoming Events</NavLink>
+                            <NavLink to="/past" style={color}>Past Events</NavLink>
+                        </Dropdown></li>
+                    <li><NavLink to="/news"><Button style={capital} className = "light-green darken-2">AMU News</Button></NavLink></li>
+                    <li><NavLink to="/contact"><Button style={capital} className = "light-green darken-2">Contact Us</Button></NavLink></li>
+                    <li><NavLink to="/donate"><Button style={capital} className = "light-green darken-2">Donate</Button></NavLink></li>
+                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Resources</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
+                            <NavLink to="/magazines" style={color}>Magazines</NavLink>
+                            <NavLink to="/documents" style={color}>Documents</NavLink>
+                        </Dropdown></li>
+                </Navbar>
+            </React.Fragment>
+        );
+    }
+}
+
+export default Navigation;
+
+/*
+<Navbar brand='Aligarh Alumni Association of NY' right className="teal lighten-2">
                     <NavItem><Button><Link to="/about">About</Link></Button></NavItem>
                     <NavItem>
                         <Dropdown trigger={<Button><Link to="/events">Events</Link></Button>} options={{hover: true, belowOrigin: true}} style={size}>
@@ -25,12 +80,7 @@ class Navigation extends Component {
                     <NavItem><Link to="/contact">Contact Us</Link></NavItem>
                     <NavItem><Link to="/donate">Donate</Link></NavItem>
                 </Navbar>
-            </React.Fragment>
-        );
-    }
-}
-
-export default Navigation;
+*/
 
 /*
 <Navbar inverse collapseOnSelect >
