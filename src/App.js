@@ -26,6 +26,9 @@ class App extends Component {
               <Route path="/contact" component={Contact}/>
               <Route path="/donate" component={Donate}/>
               <Route path = "/gallery2018" component={Gallery2018}/>
+              <Route path="/tax" render={() => (
+                <div>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794 </div>
+              )}/>
             </div>
           </div>
         </BrowserRouter>

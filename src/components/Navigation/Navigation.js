@@ -34,20 +34,20 @@ class Navigation extends Component {
                 <div>
                     <a href="/"><img src={logo} alt="logo" style={logoSize}></img></a>
                     <div style={{float: "right", display: "inline-block"}}>
-                        Aligarh Alumni Association of New York
-                        <p>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794</p>
+                        <h2 style={{paddingRight: "50px"}}><i>Aligarh Alumni Association of New York</i></h2>
+                        <h4 style={{textAlign: "center"}}>(<i>AAANY</i>)</h4>
+                        <h5 style={{textAlign: "center"}} className="it"><i>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794</i></h5>
                     </div>
                 </div>
                 <br></br>
-                <Navbar brand='AAANY' right className="brown" style={brandHeader}>
+                <Navbar right className="brown" style={{paddingRight: "8%"}}>
                     <li><NavLink to="/"><Button style={capital} className = "light-green darken-2">Home</Button></NavLink></li>
                     <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
                             <NavLink to="/goals" style={color}>About AAANY</NavLink>
                             <NavLink to="/team" style={color}>Our Team</NavLink>
                             <NavLink to="/vision" style={color}>Vision</NavLink>
                             <NavLink to="/goals" style={color}>Goals</NavLink>
-                            <NavLink to="/goals" style={color}>Federal Tax Exempt</NavLink>
-                            <NavLink to="/goals" style={color}>Privacy Policy</NavLink>
+                            <NavLink to="/tax" style={color}>Federal Tax Exempt</NavLink>
                         </Dropdown></li>
                     <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Events</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
                             <NavLink to="/upcoming" style={color}>Upcoming Events</NavLink>
