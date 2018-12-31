@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
-import { Navbar, NavItem, Dropdown, Button, Icon } from "react-materialize";
+import { NavLink } from "react-router-dom";
+import { Navbar, NavItem, Dropdown, Button } from "react-materialize";
 import logo from "../images/logo.png"
 import "./Navigation.css"
 
@@ -32,7 +32,7 @@ class Navigation extends Component {
         return (
             <React.Fragment>
                 <div>
-                    <a href="/"><img src={logo} style={logoSize}></img></a>
+                    <a href="/"><img src={logo} alt="logo" style={logoSize}></img></a>
                     <div style={{float: "right", display: "inline-block"}}>
                         Aligarh Alumni Association of New York
                         <p>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794</p>

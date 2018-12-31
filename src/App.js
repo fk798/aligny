@@ -29,7 +29,6 @@ class App extends Component {
             </div>
           </div>
         </BrowserRouter>
-        <div className="copyright text-center" id="footer">© 2018 Aligarh Alumni Association New York. All Rights Reserved.</div>
         <Song />
       </React.Fragment>
 
