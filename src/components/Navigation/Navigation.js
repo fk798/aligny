@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { Navbar, NavItem, Dropdown, Button } from "react-materialize";
-import logo from "../images/logo.png"
 import "./Navigation.css"
 
 const size = {
@@ -14,14 +13,6 @@ const color = {
     paddingLeft: "10px"
 }
 
-const logoSize = {
-    width: "20%"
-}
-
-const brandHeader = {
-    paddingLeft: "50px"
-}
-
 const capital = {
 
     textTransform: "none"
@@ -31,15 +22,6 @@ class Navigation extends Component {
     render() {
         return (
             <React.Fragment>
-                <div>
-                    <a href="/"><img src={logo} alt="logo" style={logoSize}></img></a>
-                    <div style={{float: "right", display: "inline-block"}}>
-                        <h2 style={{paddingRight: "50px"}}><i>Aligarh Alumni Association of New York</i></h2>
-                        <h4 style={{textAlign: "center"}}>(<i>AAANY</i>)</h4>
-                        <h5 style={{textAlign: "center"}} className="it"><i>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794</i></h5>
-                    </div>
-                </div>
-                <br></br>
                 <Navbar right className="brown">
                     <li><NavLink to="/"><Button style={capital} className = "light-green darken-2">Home</Button></NavLink></li>
                     <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>

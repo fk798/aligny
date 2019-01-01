@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Logo from "./components/Logo";
 import Navigation from "./components/Navigation";
 import Gallery2018 from "./components/Gallery2018";
-import Song from "./components/Song";
 import Main from "./pages/Main";
 import About from "./pages/About";
 import Past from "./pages/Past";
@@ -10,11 +10,13 @@ import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 import Upcoming from "./pages/Upcoming"
 import { BrowserRouter, Route } from "react-router-dom"
+import { Footer } from "react-materialize";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
+        <Logo />
         <BrowserRouter>
           <div>
             <Navigation />
@@ -37,7 +39,9 @@ class App extends Component {
             </div>
           </div>
         </BrowserRouter>
-        <Song />
+        <Footer className = "brown" copyrights = "© 2019 Aligarh Alumni Association of New York (AAANY)">
+        <h5 style={{color: "white"}}>Aligarh Alumni Association of New York (AAANY)</h5>
+        </Footer>
       </React.Fragment>
 
     );

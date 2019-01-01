@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400i');
+
+@font-face {
+    font-family: 'Old Standard TT';
+    src: url('https://fonts.googleapis.com/css?family=Old+Standard+TT:400i')
+  }
+
+h2, h4, .it {
+    font-family: 'Old Standard TT', serif;
+    color: green;
+    font-weight: bold;
+}
