@@ -5,20 +5,7 @@ class Main extends Component {
         return (
             <React.Fragment>
                 <h3>Mission Statement</h3>
-                <ul className="browser-default">
-                    <li>
-                    To become an intellectual and cultural association that addresses the needs of New York's diverse subgroups of Aligarian origin.
-                    </li>
-                    <li>
-                    To bring together the community of scholars, and channel their scholarship and energies on Aligarian experience.
-                    </li>
-                    <li>
-                    To identify timely issues that affect the Aligarian communities.
-                    </li>
-                    <li>
-                    To disseminate Urdu language and educate the public about AMU and Aligarians issues.
-                    </li>
-                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim odio, dictum ac quam a, tristique ultrices orci. Cras pellentesque dolor nec risus vulputate convallis. Aliquam elementum auctor ligula, in luctus nibh porta in. Etiam a molestie orci, tempus consequat mi. Nulla non tempus nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed magna massa, lacinia et mauris quis, condimentum suscipit purus. Praesent auctor nibh lorem, ac posuere lorem fermentum fringilla. Cras ac felis sapien. Vestibulum laoreet aliquet mauris ut lacinia. Maecenas eget enim fermentum, posuere lacus nec, auctor odio. </p>
             </React.Fragment>
         );
     }

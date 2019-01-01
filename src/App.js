@@ -16,9 +16,9 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Logo />
         <BrowserRouter>
           <div>
+            <Logo />
             <Navigation />
             <div className = "main-content">
               <Route exact={true} path="/" component={Main}/>

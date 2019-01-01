@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/logo.png";
 import Song from "../Song";
 import "./Logo.css";
@@ -12,7 +13,7 @@ class Logo extends Component {
         return (
             <React.Fragment>
                 <div>
-                    <a href="/"><img src={logo} alt="logo" style={logoSize}></img></a>
+                    <Link to="/"><img src={logo} alt="logo" style={logoSize}></img></Link>
                     <div style={{float: "right", display: "inline-block"}}>
                         <h2 style={{paddingRight: "50px"}}><i>Aligarh Alumni Association of New York</i></h2>
                         <h4 style={{textAlign: "center"}}>(<i>AAANY</i>)</h4>

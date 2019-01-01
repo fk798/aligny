@@ -25,7 +25,7 @@ class Navigation extends Component {
                 <Navbar right className="brown">
                     <li><NavLink to="/"><Button style={capital} className = "light-green darken-2">Home</Button></NavLink></li>
                     <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
-                            <NavLink to="/goals" style={color}>About AAANY</NavLink>
+                            <NavLink to="/about" style={color}>About AAANY</NavLink>
                             <NavLink to="/team" style={color}>Our Team</NavLink>
                             <NavLink to="/vision" style={color}>Vision</NavLink>
                             <NavLink to="/goals" style={color}>Goals</NavLink>

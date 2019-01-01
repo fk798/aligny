@@ -8,7 +8,7 @@ class About extends Component {
                     The Association takes interest in affairs of the University, runs a joint program for disabled children with the City University of New York Brooklyn College, and organizes social, literary, and cultural programs. 
                     The aims and objectives of the Association are to: 
                     (i) help AMU and its student body through scholarship and other programs; 
-                    (ii) develop and strengthen a sense of community by organizing social projects and events in the Washington DC area; 
+                    (ii) develop and strengthen a sense of community by organizing social projects and events in the New York area; 
                     and (iii) promote cultural awareness through cultural and literary activities</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim odio, dictum ac quam a, tristique ultrices orci. Cras pellentesque dolor nec risus vulputate convallis. Aliquam elementum auctor ligula, in luctus nibh porta in. Etiam a molestie orci, tempus consequat mi. Nulla non tempus nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed magna massa, lacinia et mauris quis, condimentum suscipit purus. Praesent auctor nibh lorem, ac posuere lorem fermentum fringilla. Cras ac felis sapien. Vestibulum laoreet aliquet mauris ut lacinia. Maecenas eget enim fermentum, posuere lacus nec, auctor odio.
 
