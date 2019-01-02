@@ -6,6 +6,7 @@ import Gallery2018 from "./components/Gallery2018";
 import Gallery2017 from "./components/Gallery2017";
 import Main from "./pages/Main";
 import About from "./pages/About";
+import Team from "./pages/Team";
 import Past from "./pages/Past";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
@@ -24,6 +25,7 @@ class App extends Component {
             <div className = "main-content">
               <Route exact={true} path="/" component={Main}/>
               <Route path="/about" component={About}/>
+              <Route path="/team" component={Team}/>
               <Route path="/upcoming" component={Upcoming}/>
               <Route path="/past" component={Past}/>
               <Route path="/contact" component={Contact}/>
