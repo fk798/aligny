@@ -3,6 +3,7 @@ import './App.css';
 import Logo from "./components/Logo";
 import Navigation from "./components/Navigation";
 import Gallery2018 from "./components/Gallery2018";
+import Gallery2017 from "./components/Gallery2017";
 import Main from "./pages/Main";
 import About from "./pages/About";
 import Past from "./pages/Past";
@@ -28,6 +29,7 @@ class App extends Component {
               <Route path="/contact" component={Contact}/>
               <Route path="/donate" component={Donate}/>
               <Route path = "/gallery2018" component={Gallery2018}/>
+              <Route path = "/gallery2017" component={Gallery2017}/>
               <Route path="/tax" render={() => (
                 <div>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794 </div>
               )}/>

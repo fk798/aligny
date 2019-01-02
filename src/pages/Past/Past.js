@@ -9,6 +9,7 @@ class Past extends Component {
                 <h1>Past Events</h1>
                 <br></br>
                 <h3><Link to="/gallery2018">Sir Syed Day Mushaira 2018</Link></h3>
+                <h3><Link to="/gallery2017">Sir Syed Day Mushaira 2017</Link></h3>
             </React.Fragment>
         )
     }
