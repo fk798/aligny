@@ -5,12 +5,12 @@ import Navigation from "./components/Navigation";
 import Gallery2018 from "./components/Gallery2018";
 import Gallery2017 from "./components/Gallery2017";
 import Main from "./pages/Main";
-import About from "./pages/About";
-import Team from "./pages/Team";
-import Past from "./pages/Past";
+import About from "./pages/About_Us/About";
+import Team from "./pages/About_Us/Team";
+import Past from "./pages/Events/Past";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
-import Upcoming from "./pages/Upcoming"
+import Upcoming from "./pages/Events/Upcoming";
 import { BrowserRouter, Route } from "react-router-dom"
 import { Footer } from "react-materialize";
 
