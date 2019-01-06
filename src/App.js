@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import Logo from "./components/Logo";
 import Navigation from "./components/Navigation";
 import Gallery2018 from "./components/Gallery2018";
@@ -13,6 +12,7 @@ import Donate from "./pages/Donate";
 import Upcoming from "./pages/Events/Upcoming";
 import { BrowserRouter, Route } from "react-router-dom"
 import { Footer } from "react-materialize";
+import './App.css';
 
 class App extends Component {
   render() {
