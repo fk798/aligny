@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Donate.css";
+import pdf from "../../components/images/donate.pdf"
 
 class Donate extends Component {
     render() {
@@ -13,6 +14,9 @@ class Donate extends Component {
                     </li>
                     <li>
                         Checks are payable to <b>AAANY</b>. Please send them to <b>Tanvir Ahmad</b> to the address <b>1289 Sturlane Place, Hewlett, NY 11557</b>
+                    </li>
+                    <li>
+                        Use this form: <a href={pdf} target="_blank">Donation Form</a>
                     </li>
                 </ul>
             </React.Fragment>

@@ -9,6 +9,7 @@ import Team from "./pages/About_Us/Team";
 import Past from "./pages/Events/Past";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
+import Magazines from "./pages/Resources/Magazines";
 import Upcoming from "./pages/Events/Upcoming";
 import { BrowserRouter, Route } from "react-router-dom"
 import { Footer } from "react-materialize";
@@ -40,6 +41,7 @@ class App extends Component {
                 <div>2) Regular Member : Discounted prices on all AAANY activities and publications (One Year).</div>
                 </React.Fragment>
               )}/>
+              <Route path="/magazines" component={Magazines}/>
             </div>
           </div>
         </BrowserRouter>
