@@ -6,24 +6,24 @@ class About extends Component {
             <React.Fragment>
                 <div class="row">
                     <div class="col">
-                        <img src={require("../../../components/images/team/tanvir.jpg")}></img>
+                        <img src="https://s3.amazonaws.com/aaany-assets/images/team/tanvir.jpg"></img>
                         <p><b>President</b></p>
                         <p>Tanvir Ahmad</p>
                     </div>
                     <div class="col">
-                        <img src={require("../../../components/images/team/tanvir.jpg")}></img>
+                        <img src="https://s3.amazonaws.com/aaany-assets/images/team/tanvir.jpg"></img>
                         <p><b>Vice-President</b></p>
                         <p>Tanvir Ahmad</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
-                        <img src={require("../../../components/images/team/tanvir.jpg")}></img>
+                        <img src="https://s3.amazonaws.com/aaany-assets/images/team/tanvir.jpg"></img>
                         <p><b>President</b></p>
                         <p>Tanvir Ahmad</p>
                     </div>
                     <div class="col">
-                        <img src={require("../../../components/images/team/tanvir.jpg")}></img>
+                        <img src="https://s3.amazonaws.com/aaany-assets/images/team/tanvir.jpg"></img>
                         <p><b>Vice-President</b></p>
                         <p>Tanvir Ahmad</p>
                     </div>

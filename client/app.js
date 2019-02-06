@@ -2,10 +2,10 @@ const fs = require("fs");
 
 const names = []
 console.log(__dirname);
-fs.readdir(__dirname + "/src/components/images/2017", function(err, items) {
+fs.readdir(__dirname + "/../../../images/2018", function(err, items) {
     console.log("[");
     for (var i = 0; i < items.length; i++) {
-        console.log("{ original: require('../images/2017/" + items[i] + "') }, ");
+        console.log("{ original: 'https://s3.amazonaws.com/aaany-assets/images/2018/" + items[i] + "' }, ");
     }
     console.log("]");
 })
