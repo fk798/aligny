@@ -24,14 +24,14 @@ class Navigation extends Component {
             <React.Fragment>
                 <Navbar right className="brown">
                     <li><NavLink to="/"><Button style={capital} className = "light-green darken-2">Home</Button></NavLink></li>
-                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
+                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}}>
                             <NavLink to="/about" style={color}>About AAANY</NavLink>
                             <NavLink to="/team" style={color}>Our Team</NavLink>
                             <NavLink to="/vision" style={color}>Vision</NavLink>
                             <NavLink to="/goals" style={color}>Goals</NavLink>
                             <NavLink to="/tax" style={color}>Federal Tax Exempt</NavLink>
                         </Dropdown></li>
-                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Events</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
+                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Events</Button></NavItem>} options={{hover: true, belowOrigin: true}}>
                             <NavLink to="/upcoming" style={color}>Upcoming Events</NavLink>
                             <NavLink to="/past" style={color}>Past Events</NavLink>
                         </Dropdown></li>
@@ -39,7 +39,7 @@ class Navigation extends Component {
                     <li><NavLink to="/membership"><Button style={capital} className = "light-green darken-2">Membership</Button></NavLink></li>
                     <li><NavLink to="/contact"><Button style={capital} className = "light-green darken-2">Contact Us</Button></NavLink></li>
                     <li><NavLink to="/donate"><Button style={capital} className = "light-green darken-2">Donate</Button></NavLink></li>
-                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Resources</Button></NavItem>} options={{hover: true, belowOrigin: true}} style={size}>
+                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Resources</Button></NavItem>} options={{hover: true, belowOrigin: true}}>
                             <NavLink to="/magazines" style={color}>Magazines</NavLink>
                             <NavLink to="/documents" style={color}>Documents</NavLink>
                         </Dropdown></li>
