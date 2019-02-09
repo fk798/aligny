@@ -9,7 +9,7 @@ class About extends Component {
                 <p>There are a number of activites of the Assocation which is conducted annually:</p>
                 <ul>
                     <li>Mushaira - On the annual Sir Syed Day Dinner, Mushaira is conducted where local and international poets are invited to participate.</li>
-                    <li>Awards - Sir Syed Lifetime Achievement award is given to renowed literates.</li>
+                    <li>Awards - Sir Syed Lifetime Achievement award is given to renouned literates.</li>
                     <li>Magazines - Annual publication of magazines.</li>
                 </ul>
             </React.Fragment>
