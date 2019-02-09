@@ -5,7 +5,13 @@ class About extends Component {
         return (
             <React.Fragment>
                 <h3>About AAANY</h3>
-                <p>The Aligarh Alumni Association of New York is a non-political, non-profitable secular organization devoted to support social, cultural, educational, and literary activities. It supports the educational ideals and goals of Aligarh Muslim University and its founder, Sir Syed Ahmed Khan,including brotherhood through social contacts and cooperation among diverse groups of Aligarh Alumni Associations spread across North America.</p>
+                <p>The Association is non-profit, non-piolitical and secular organization geared/devoted towards literary, charitable, and educational work in the New York area as well as India.</p>
+                <p>There are a number of activites of the Assocation which is conducted annually:</p>
+                <ul>
+                    <li>Mushaira - On the annual Sir Syed Day Dinner, Mushaira is conducted where local and international poets are invited to participate.</li>
+                    <li>Awards - Sir Syed Lifetime Achievement award is given to renowed literates.</li>
+                    <li>Magazines - Annual publication of magazines.</li>
+                </ul>
             </React.Fragment>
         )
     }
