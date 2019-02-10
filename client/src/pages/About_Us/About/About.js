@@ -12,11 +12,11 @@ literary, and cultural programs and helps under privileged students financially 
 educationally in India. The aims and objectives of the Association develop and strengthen a
 sense of community by organizing social events in the New York area and promote cultural
 awareness through cultural and literary activities.</p>
-<p>These are the activities done by AAANY each year.</p>
+<p>These are the activities done by AAANY each year:</p>
 <ul>
-<li>1.Mushaira (poetry recitation) - On the occasion of Sir Syed Day Dinner Mushaira is conducted where local and
+<li>1. Mushaira (poetry recitation) - On the occasion of Sir Syed Day Dinner Mushaira is conducted where local and
 international poets are invited and recite poetry in Urdu.</li>
-<li>2.Awards - Sir Syed Life Time achievement awards are given to persons whose contributions for
+<li>2. Awards - Sir Syed Life Time achievement awards are given to persons whose contributions for
 achieving the visions of Sir Syed Khan is recognized. </li>
 <li>3. Magazine - Annual Publication of Magazine which contains descriptions of the work and
 contributions of well wishers to AAANY </li>
