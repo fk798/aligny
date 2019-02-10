@@ -10,8 +10,8 @@ import Vision from "./pages/About_Us/Vision";
 import Past from "./pages/Events/Past";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
-import Magazines from "./pages/Resources/Magazines";
-import Upcoming from "./pages/Events/Upcoming";
+//import Magazines from "./pages/Resources/Magazines";
+//import Upcoming from "./pages/Events/Upcoming";
 import Construction from "./components/Construction";
 import { BrowserRouter, Route } from "react-router-dom"
 import { Footer } from "react-materialize";
@@ -30,7 +30,6 @@ class App extends Component {
               <Route path="/about" component={About}/>
               <Route path="/team" component={Team}/>
               <Route path="/vision" component={Vision}/>
-              <Route path="/goals" component={Construction}/>
               <Route path="/tax" render={() => (
                 <div>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794 </div>
               )}/>
@@ -46,7 +45,7 @@ class App extends Component {
               <Route path="/donate" component={Donate}/>
               <Route path = "/gallery2018" component={Gallery2018}/>
               <Route path = "/gallery2017" component={Gallery2017}/>
-              <Route path="/magazines" component={Magazines}/>
+              <Route path="/magazines" component={Construction}/>
             </div>
           </div>
         </BrowserRouter>
@@ -60,3 +59,4 @@ class App extends Component {
 }
 
 export default App;
+//<Route path="/goals" component={Construction}/>
