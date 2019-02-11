@@ -5,7 +5,7 @@ class Main extends Component {
         return (
             <React.Fragment>
                 <h3>Mission Statement</h3>
-                <p>Under Construction</p>
+                <p>Aligarh Alumni Association of New York (AAANY) is non-profit, secular, non-political organization geared towards educational, social, cultural and literary needs of the community.</p>
             </React.Fragment>
         );
     }

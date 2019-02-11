@@ -37,8 +37,20 @@ class App extends Component {
               <Route path="/past" component={Past}/>
               <Route path="/news" component={Construction}/>
               <Route path="/membership" render={() => (<React.Fragment>
-                <div>1) Lifetime Member : Free access to all AAANY activities and publications.</div>
-                <div>2) Regular Member : Discounted prices on all AAANY activities and publications (One Year).</div>
+                <p>The Aligarh Alumni Association of New York is geared towards achieving the goals
+of Sir Syed Ahmad Khan such as education and economic development of under-
+privileged communities, emphasis on modern scientific knowledge and work
+towards unity and harmony among different communities.
+In order to achieve those goals AAANY welcome persons as new member to be part
+of the organization.</p>
+
+<p>These are the two types of memberships:</p>
+<ul>
+  <li>1) Lifetime Member : Free access to all AAANY activities and publications.</li>
+                <li>2) Regular Member : Discounted prices on all AAANY activities and publications (One Year).</li>
+</ul>
+
+<p>To become member, please fill out the membership form</p>
                 </React.Fragment>
               )}/>
               <Route path="/contact" component={Contact}/>
