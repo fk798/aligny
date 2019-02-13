@@ -9,7 +9,7 @@ class About extends Component {
 profit, charitable, educational, cultural and secular organization for alumni of the Aligarh
 Muslim University (AMU), Aligarh, India and its well-wishers. The Association organizes social,
 literary, and cultural programs and helps under privileged students financially as well as
-educationally in India. The aims and objectives of the Association develop and strengthen a
+educationally in India. The aims and objectives of the Association to develop and strengthen a
 sense of community by organizing social events in the New York area and promote cultural
 awareness through cultural and literary activities.</p>
 <p>These are the activities done by AAANY each year:</p>

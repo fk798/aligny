@@ -27,7 +27,7 @@ class Navigation extends Component {
                     <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}}>
                             <NavLink to="/about" style={color}>About AAANY</NavLink>
                             <NavLink to="/team" style={color}>Our Team</NavLink>
-                            <NavLink to="/vision" style={color}>Vision and Goals</NavLink>
+                            <NavLink to="/vision" style={color}>Vision</NavLink>
                             <NavLink to="/tax" style={color}>Federal Tax Exempt</NavLink>
                         </Dropdown></li>
                     <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Events</Button></NavItem>} options={{hover: true, belowOrigin: true}}>

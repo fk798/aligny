@@ -5,11 +5,7 @@ class Vision extends Component {
         return (
             <React.Fragment>
                 <h3>Vision</h3>
-                <p>Our vision is to help promote the ideology of Sir Syed to educate others and expand knowledge for everyone. This can be done by:</p>
-                <ul>
-                    <li>Helping and supporting other organizations under Federation of Aligarh Alumni Assocation.</li>
-                    <li>Supporting underpriviledged children for their upliftment and helping them financially as well as educationally in India.</li>
-                </ul>
+                <p>Our vision as alumni is to help and "pay back" by promoting Sir Syed Khan's vision in imparting modern education, supporting under -privileged children educationally and financially and upholding the traditions and culture of AMU.</p>
             </React.Fragment>
         )
     }
