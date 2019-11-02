@@ -11,7 +11,7 @@ import Past from "./pages/Events/Past";
 import Contact from "./pages/Contact";
 import Donate from "./pages/Donate";
 //import Magazines from "./pages/Resources/Magazines";
-//import Upcoming from "./pages/Events/Upcoming";
+import Upcoming from "./pages/Events/Upcoming";
 import Construction from "./components/Construction";
 import { BrowserRouter, Route } from "react-router-dom"
 import { Footer } from "react-materialize";
@@ -33,7 +33,7 @@ class App extends Component {
               <Route path="/tax" render={() => (
                 <div>A Non-Profit 501 (C) (3) Educational and Charitable Organization, Tax ID # 13-4002794 </div>
               )}/>
-              <Route path="/upcoming" component={Construction}/>
+              <Route path="/upcoming" component={Upcoming}/>
               <Route path="/past" component={Past}/>
               <Route path="/news" component={Construction}/>
               <Route path="/membership" render={() => (<React.Fragment>

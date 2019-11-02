@@ -11,7 +11,7 @@ class About extends Component {
                         <p>Tanvir Ahmad</p>
                     </div>
                     <div class="col">
-                        <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiQ8bbQ4LHgAhXthOAKHR39CTkQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fblank%2F&psig=AOvVaw2na_Bn5FKR33fbLvxWzOvq&ust=1549908336506420"></img>
+                        <img src="https://s3.amazonaws.com/aaany-assets/images/team/usmani.jpg" height = "215"></img>
                         <p><b>Vice-President</b></p>
                         <p>Kauser Usmani</p>
                     </div>
