@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Button } from "react-materialize";
+//import { Button } from "react-materialize";
 
 class Contact extends Component {
     constructor (props) {
@@ -90,7 +90,7 @@ class Contact extends Component {
                                 <label for="comments">Message</label>
                             </div>
                         </div>
-                        <Button>Submit</Button>
+                        <button>Submit</button>
                     </form>
                 </div>
         )

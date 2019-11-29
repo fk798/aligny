@@ -1,50 +1,63 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Navbar, NavItem, Dropdown, Button } from "react-materialize";
-import "./Navigation.css"
-
-const size = {
-    width: "500px"
-}
-
-const color = {
-    color: "black",
-    whiteSpace: "nowrap",
-    paddingLeft: "10px"
-}
-
-const capital = {
-
-    textTransform: "none"
-}
+import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from "react-bootstrap"
 
 class Navigation extends Component {
     render() {
         return (
-            <React.Fragment>
-                <Navbar right className="brown">
-                    <li><NavLink to="/"><Button style={capital} className = "light-green darken-2">Home</Button></NavLink></li>
-                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">About Us</Button></NavItem>} options={{hover: true, belowOrigin: true}}>
-                            <NavLink to="/about" style={color}>About AAANY</NavLink>
-                            <NavLink to="/team" style={color}>Our Team</NavLink>
-                            <NavLink to="/vision" style={color}>Vision</NavLink>
-                            <NavLink to="/tax" style={color}>Federal Tax Exempt</NavLink>
-                        </Dropdown></li>
-                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Events</Button></NavItem>} options={{hover: true, belowOrigin: true}}>
-                            <NavLink to="/upcoming" style={color}>Upcoming Events</NavLink>
-                            <NavLink to="/past" style={color}>Past Events</NavLink>
-                        </Dropdown></li>
-                    <li><NavLink to="/news"><Button style={capital} className = "light-green darken-2">AMU News</Button></NavLink></li>
-                    <li><NavLink to="/membership"><Button style={capital} className = "light-green darken-2">Membership</Button></NavLink></li>
-                    <li><NavLink to="/contact"><Button style={capital} className = "light-green darken-2">Contact Us</Button></NavLink></li>
-                    <li><NavLink to="/donate"><Button style={capital} className = "light-green darken-2">Donate</Button></NavLink></li>
-                    <li><Dropdown trigger={<NavItem><Button style={capital} className = "light-green darken-2">Resources</Button></NavItem>} options={{hover: true, belowOrigin: true}}>
-                            <NavLink to="/magazines" style={color}>Magazines</NavLink>
-                            <NavLink to="/documents" style={color}>Documents</NavLink>
-                        </Dropdown></li>
-                </Navbar>
-            </React.Fragment>
-        );
+            <Navbar bg="light" expand="lg">
+            <Navbar.Brand>
+                <NavLink to="/">AAANY</NavLink>
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                <Nav.Link>
+                    <NavLink to="/about">About</NavLink>
+                </Nav.Link>
+                <Nav.Link>
+                    <NavLink to = "/team">Our Team</NavLink>
+                </Nav.Link>
+                <Nav.Link>
+                    <NavLink to="/vision">Vision</NavLink>
+                </Nav.Link>
+                <Nav.Link>
+                    <NavLink to="/tax">Federal Tax Exempt</NavLink>
+                </Nav.Link>
+                <NavDropdown title="Events" id="basic-nav-dropdown">
+                    <NavDropdown.Item >
+                        <NavLink to="/upcoming">Upcoming Events</NavLink>
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item >
+                        <NavLink to="/past">Past Events</NavLink>
+                    </NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link>
+                    <NavLink to="/news">AMU News</NavLink>
+                </Nav.Link>
+                <Nav.Link>
+                    <NavLink to="/membership">Membership</NavLink>
+                </Nav.Link>
+                <Nav.Link>
+                    <NavLink to="/contact">Contact Us</NavLink>
+                </Nav.Link>
+                <Nav.Link>
+                    <NavLink to="/donate">Donate</NavLink>
+                </Nav.Link>
+                <NavDropdown title="Resources" id="basic-nav-dropdown">
+                    <NavDropdown.Item >
+                        <NavLink to="/magazines">Magazines</NavLink>
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item >
+                        <NavLink to="/documents">Documents</NavLink>
+                    </NavDropdown.Item>
+                </NavDropdown>
+                </Nav>
+            </Navbar.Collapse>
+            </Navbar>
+            )
     }
 }
 

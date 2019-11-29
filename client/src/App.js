@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Logo from "./components/Logo";
 import Navigation from "./components/Navigation";
+import Gallery2019 from "./components/Gallery2019"
 import Gallery2018 from "./components/Gallery2018";
 import Gallery2017 from "./components/Gallery2017";
+import Song from "./components/Song"
 import Main from "./pages/Main";
 import About from "./pages/About_Us/About";
 import Team from "./pages/About_Us/Team";
@@ -14,16 +15,15 @@ import Donate from "./pages/Donate";
 import Upcoming from "./pages/Events/Upcoming";
 import Construction from "./components/Construction";
 import { BrowserRouter, Route } from "react-router-dom"
-import { Footer } from "react-materialize";
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
+        {/*<Song />*/}
         <BrowserRouter>
           <div>
-            <Logo />
             <Navigation />
             <div className = "main-content">
               <Route exact={true} path="/" component={Main}/>
@@ -57,13 +57,14 @@ of the organization.</p>
               <Route path="/donate" component={Donate}/>
               <Route path = "/gallery2018" component={Gallery2018}/>
               <Route path = "/gallery2017" component={Gallery2017}/>
+              <Route path = "/gallery2019" component={Gallery2019}/>
               <Route path="/magazines" component={Construction}/>
             </div>
           </div>
         </BrowserRouter>
-        <Footer className = "brown" copyrights = "© 2019 Aligarh Alumni Association of New York (AAANY)">
-        <h5 style={{color: "white"}}>Aligarh Alumni Association of New York (AAANY)</h5>
-        </Footer>
+        <div className = "brown" copyrights = "© 2019 Aligarh Alumni Association of New York (AAANY)">
+        <h5>Aligarh Alumni Association of New York (AAANY)</h5>
+        </div>
       </React.Fragment>
 
     );

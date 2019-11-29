@@ -20,15 +20,15 @@ app.post('/api/messages', (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: 'faisalk.karim3@gmail.com',
+            user: 'nm12292000@gmail.com',
             pass: "Allah786nyunm"
         }
     })
     let mailOptions = {
-        from: '"Faisal Karim <faisalk.karim3@gmail.com>',
+        from: '"League Draven',
         to: 'faisalk.karim3@gmail.com',
         subject: "Message from AAANY Viewer",
-        text: message.firstName + " " + message.lastName + ": " + message.email + " - " + message.message
+        text: message.firstName + " " + message.lastName + ": " + message.email + "\n\n" + message.message
     }
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
