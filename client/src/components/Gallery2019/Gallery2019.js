@@ -170,16 +170,6 @@ class Gallery2019 extends Component {
       <React.Fragment>
         <h1>Sir Syed Day Mushaira 2019</h1>
         <br></br>
-        <Carousel style = {{backgroundColor: "#484848"}}>
-        {
-          images.map(function(image) {
-          return (<Carousel.Item style = {{textAlign: "center"}}>
-            <img src = {image.original} alt = "image" height = "500px"/>
-          </Carousel.Item>
-          )})
-        }
-        </Carousel>
-        <br></br>
         <div style = {{textAlign: "center"}}>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLhk73sqjPfvULu_XFonoQvHC0pJKHx0sa" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
@@ -190,3 +180,13 @@ class Gallery2019 extends Component {
 }
 
 export default Gallery2019;
+
+/*<Carousel style = {{backgroundColor: "#484848"}}>
+        {
+          images.map(function(image) {
+          return (<Carousel.Item style = {{textAlign: "center"}}>
+            <img src = {image.original} alt = "image" height = "500px"/>
+          </Carousel.Item>
+          )})
+        }
+        </Carousel> */

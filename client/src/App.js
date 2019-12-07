@@ -3,7 +3,7 @@ import Navigation from "./components/Navigation";
 import Gallery2019 from "./components/Gallery2019"
 import Gallery2018 from "./components/Gallery2018";
 import Gallery2017 from "./components/Gallery2017";
-import Song from "./components/Song"
+import Logo from "./components/Logo"
 import Main from "./pages/Main";
 import About from "./pages/About_Us/About";
 import Team from "./pages/About_Us/Team";
@@ -21,9 +21,9 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        {/*<Song />*/}
         <BrowserRouter>
           <div>
+          <Logo />
             <Navigation />
             <div className = "main-content">
               <Route exact={true} path="/" component={Main}/>
