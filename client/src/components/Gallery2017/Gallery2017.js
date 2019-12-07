@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import ImageGallery from 'react-image-gallery';
-//import "../../../node_modules/react-image-gallery/styles/css/image-gallery.css";
-//import "../../../node_modules/react-image-gallery/styles/scss/image-gallery.scss";
+import { Carousel } from "react-bootstrap"
 import "./Gallery2017.css";
 
 class Gallery2017 extends Component {
@@ -172,7 +170,16 @@ class Gallery2017 extends Component {
       <React.Fragment>
         <h1>Sir Syed Day Mushaira 2017</h1>
         <br></br>
-        <ImageGallery items={images} />
+        <Carousel style = {{backgroundColor: "#484848"}}>
+        {
+          images.map(function(image) {
+          return (
+          <Carousel.Item style = {{textAlign: "center"}}>
+            <img src = {image.original} alt = "image" width = "25%"/>
+          </Carousel.Item>
+          )})
+        }
+        </Carousel>
       </React.Fragment>
     );
   }

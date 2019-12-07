@@ -63,7 +63,7 @@ of the organization.</p>
           </div>
         </BrowserRouter>
         <div className = "brown" copyrights = "© 2019 Aligarh Alumni Association of New York (AAANY)">
-        <h5>Aligarh Alumni Association of New York (AAANY)</h5>
+        <h5 style = {{textAlign: "center"}}>Aligarh Alumni Association of New York (AAANY)</h5>
         </div>
       </React.Fragment>
 
