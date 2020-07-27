@@ -2,9 +2,9 @@
   "name": "website-server",
   "version": "1.0.0",
   "scripts": {
-    "client": "cd client && yarn start",
+    "client": "cd client && npm run start",
     "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },

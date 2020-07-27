@@ -18,6 +18,12 @@ and later on ,1885, with university of Allahabad.</p>
 <p>Sir Syed died on March 27, 1898 and was buried in the premises of the university mosque in the Sir Syed Hall, AMU.</p>
 
 <p>AMU is considered as one of the top ranked universities in India with its alumni spread across the world in different cities and countries under multiple umbrella of organizations and associations and connected to AMU and are contributing in all possible ways.</p>
+            
+<br></br>
+<div style = {{textAlign: "center"}}>
+<h3>Reflections on COVID-19</h3>
+<iframe width="600" height="400" src="https://www.youtube.com/embed/kmu5KfDaK6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+</div>
             </React.Fragment>
         );
     }
