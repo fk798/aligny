@@ -27,7 +27,7 @@ export default function Donate() {
               Checks are payable to <b>Aligarh Alumni Association Inc.</b>. Please mail checks to <b>Mr. Kauser Usmani</b> - <b>6504 Ocean Ave, South Arverne, NY 11692</b>
           </li>
           <li>
-              Donations can be sent to Aligarh Aluni Association's <b>Chase Bank Account</b> directly. <b>Routing Number: 021000021</b>; <b>Account Number: 965314982</b>
+              Donations can be sent to Aligarh Alumni Association's <b>Chase Bank Account</b> directly. <b>Routing Number: 021000021</b>; <b>Account Number: 965314982</b>
           </li>
         </ul>
       </main>

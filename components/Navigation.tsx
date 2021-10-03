@@ -39,7 +39,7 @@ export default function Navigation() {
                     </div>
                 </Grid>
                 <Grid item xs = "auto">
-                    <iframe style = {{float: "right"}} width="400" height="200" src="https://www.youtube.com/embed/I5QtnY4PpJg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe width="400" height="200" src="https://www.youtube.com/embed/I5QtnY4PpJg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </Grid>
             </Grid>
             <Box sx={{ width: "100%" }}>

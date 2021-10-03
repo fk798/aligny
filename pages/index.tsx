@@ -33,7 +33,7 @@ export default function Home() {
 
         <div style = {{textAlign: "center", paddingTop: "50px", paddingBottom: "50px"}}>
           <h2>Upcoming Events</h2>
-          <img src = "https://aaany-assets.s3.amazonaws.com/2021-flyer.jpg" width = "100%"></img>
+          <img src = "https://aaany-assets.s3.amazonaws.com/2021-flyer.jpg" width = "50%"></img>
         </div>
 
         <div style = {{textAlign: "center"}}>
