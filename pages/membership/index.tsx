@@ -27,7 +27,7 @@ export default function Membership() {
                 <li><b>Regular Member</b>: Discounted prices on all AAANY activities and publications (One Year).</li>
             </ul>
 
-            <p>To become member, please fill out the membership form (coming soon).</p>
+            <p>To become member, please email us at <a href = "mailto:aaany1017@gmail.com">aaany1017@gmail.com</a>.</p>
       </main>
 
       <Footer />
