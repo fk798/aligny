@@ -60,10 +60,12 @@ export default function Navigation() {
                         <Grid item xs = "auto"><Link href = "/team"><Button color="inherit">Our Team</Button></Link></Grid>
                         <Grid item xs = "auto"><Button color="inherit" onClick={handleClick}>Gallery</Button></Grid>
                         <Menu anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{'aria-labelledby': 'basic-button'}}>
-                            <Link href="/gallery/2017"><MenuItem onClick={handleClose}>2017</MenuItem></Link>
+                            <Link href="/gallery/2019"><MenuItem onClick={handleClose}>2019</MenuItem></Link>
                             <Link href="/gallery/2018"><MenuItem onClick={handleClose}>2018</MenuItem></Link>
+                            <Link href="/gallery/2017"><MenuItem onClick={handleClose}>2017</MenuItem></Link>
                         </Menu>
                         <Grid item xs = "auto"><Link href = "/donate"><Button color="inherit">Donate</Button></Link></Grid>
+                        <Grid item xs = "auto"><Link href = "/membership"><Button color="inherit">Membership</Button></Link></Grid>
                     </Grid>
                     </Toolbar>
                 </AppBar>
