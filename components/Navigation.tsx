@@ -13,13 +13,24 @@ import { Grid } from '@mui/material'
 
 export default function Navigation() {
 
-    const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-    const open = Boolean(anchorEl);
-    const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-        setAnchorEl(event.currentTarget);
+    // gallery
+    const [anchorElG, setAnchorElG] = React.useState<null | HTMLElement>(null);
+    const openG = Boolean(anchorElG);
+    const handleClickG = (event: React.MouseEvent<HTMLButtonElement>) => {
+        setAnchorElG(event.currentTarget);
     };
-    const handleClose = () => {
-        setAnchorEl(null);
+    const handleCloseG = () => {
+        setAnchorElG(null);
+    };
+
+    // publications
+    const [anchorElP, setAnchorElP] = React.useState<null | HTMLElement>(null);
+    const openP = Boolean(anchorElP);
+    const handleClickP = (event: React.MouseEvent<HTMLButtonElement>) => {
+        setAnchorElP(event.currentTarget);
+    };
+    const handleCloseP = () => {
+        setAnchorElP(null);
     };
 
     return (
@@ -54,15 +65,19 @@ export default function Navigation() {
                     >
                         <MenuIcon />
                     </IconButton>*/}
-                    <Grid container spacing = {20} justifyContent = "center">
+                    <Grid container spacing = {15} justifyContent = "center">
                         <Grid item xs = "auto"><Link href = "/"><Button color="inherit">Home</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/about"><Button color="inherit">About</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/team"><Button color="inherit">Our Team</Button></Link></Grid>
-                        <Grid item xs = "auto"><Button color="inherit" onClick={handleClick}>Gallery</Button></Grid>
-                        <Menu anchorEl={anchorEl} open={open} onClose={handleClose} MenuListProps={{'aria-labelledby': 'basic-button'}}>
-                            <Link href="/gallery/2019"><MenuItem onClick={handleClose}>2019</MenuItem></Link>
-                            <Link href="/gallery/2018"><MenuItem onClick={handleClose}>2018</MenuItem></Link>
-                            <Link href="/gallery/2017"><MenuItem onClick={handleClose}>2017</MenuItem></Link>
+                        <Grid item xs = "auto"><Button color="inherit" onClick={handleClickG}>Gallery</Button></Grid>
+                        <Menu anchorEl={anchorElG} open={openG} onClose={handleCloseG} MenuListProps={{'aria-labelledby': 'basic-button'}}>
+                            <Link href="/gallery/2019"><MenuItem onClick={handleCloseG}>2019</MenuItem></Link>
+                            <Link href="/gallery/2018"><MenuItem onClick={handleCloseG}>2018</MenuItem></Link>
+                            <Link href="/gallery/2017"><MenuItem onClick={handleCloseG}>2017</MenuItem></Link>
+                        </Menu>
+                        <Grid item xs = "auto"><Button color="inherit" onClick={handleClickP}>Publications</Button></Grid>
+                        <Menu anchorEl={anchorElP} open={openP} onClose={handleCloseP} MenuListProps={{'aria-labelledby': 'basic-button'}}>
+                            <Link href="/publications/2019"><MenuItem onClick={handleCloseP}>2019</MenuItem></Link>
                         </Menu>
                         <Grid item xs = "auto"><Link href = "/donate"><Button color="inherit">Donate</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/membership"><Button color="inherit">Membership</Button></Link></Grid>
