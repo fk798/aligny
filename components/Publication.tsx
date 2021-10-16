@@ -11,14 +11,13 @@ function Gallery(props) {
         </Head>
 
         <h1>The New York Alig Sir Syed Day Magazine {props.year}</h1>
-        <h2>Cover</h2>
-        <embed src = {"https://aaany-assets.s3.amazonaws.com/images/publications/" + props.year + "/" + props.cover} width = "50%" height = "1000px"/>
-
-        <h2>English</h2>
-        <embed src = {"https://aaany-assets.s3.amazonaws.com/images/publications/" + props.year + "/" + props.english} width = "50%" height = "1000px"/>
-
-        <h2>Urdu</h2>
-        <embed src = {"https://aaany-assets.s3.amazonaws.com/images/publications/" + props.year + "/" + props.urdu} width = "50%" height = "1000px"/>
+        {props.pdfs.map((elem) => {
+          return (
+            <React.Fragment>
+              <h2>{elem[0]}</h2>
+              <embed src = {elem[1]} width = "50%" height = "1000px"/>
+            </React.Fragment>
+          )})}
         <br></br>
 
     </React.Fragment>
