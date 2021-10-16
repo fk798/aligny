@@ -18,8 +18,6 @@ function Gallery(props) {
               <embed src = {elem[1]} width = "50%" height = "1000px"/>
             </React.Fragment>
           )})}
-        <br></br>
-
     </React.Fragment>
   );
 }

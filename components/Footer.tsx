@@ -6,8 +6,9 @@ function Footer(props) {
 
   return (
     <React.Fragment>
+        <br></br>
         <footer>
-            Aligarh Alumni Association of New York (AAANY)
+            <b>Aligarh Alumni Association of New York (AAANY)</b>
         </footer>
         <style jsx>{`
             footer {
