@@ -9,7 +9,6 @@ export default function _2019() {
 
     const images = [
         { original: 'https://s3.amazonaws.com/aaany-assets/images/2019/BZDM9728.JPG' },
-        { original: 'https://s3.amazonaws.com/aaany-assets/images/2019/DNWK4528.JPG' },
         { original: 'https://s3.amazonaws.com/aaany-assets/images/2019/DYQK6403.JPG' },
         { original: 'https://s3.amazonaws.com/aaany-assets/images/2019/FPEX4089.JPG' },
         { original: 'https://s3.amazonaws.com/aaany-assets/images/2019/JNGY1199.JPG' },

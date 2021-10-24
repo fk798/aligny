@@ -71,6 +71,7 @@ export default function Navigation() {
                         <Grid item xs = "auto"><Link href = "/team"><Button color="inherit">Our Team</Button></Link></Grid>
                         <Grid item xs = "auto"><Button color="inherit" onClick={handleClickG}>Gallery</Button></Grid>
                         <Menu anchorEl={anchorElG} open={openG} onClose={handleCloseG} MenuListProps={{'aria-labelledby': 'basic-button'}}>
+                            <Link href="/gallery/2021"><MenuItem onClick={handleCloseG}>2021</MenuItem></Link>
                             <Link href="/gallery/2019"><MenuItem onClick={handleCloseG}>2019</MenuItem></Link>
                             <Link href="/gallery/2018"><MenuItem onClick={handleCloseG}>2018</MenuItem></Link>
                             <Link href="/gallery/2017"><MenuItem onClick={handleCloseG}>2017</MenuItem></Link>

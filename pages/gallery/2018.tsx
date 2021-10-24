@@ -75,6 +75,7 @@ export default function _2018() {
         { original: 'https://s3.amazonaws.com/aaany-assets/images/2018/12 Bottom (7).JPG' },
         { original: 'https://s3.amazonaws.com/aaany-assets/images/2018/12 Bottom (8).JPG' },
         { original: 'https://s3.amazonaws.com/aaany-assets/images/2018/12 Bottom (9).JPG' },
+        { original: 'https://s3.amazonaws.com/aaany-assets/images/2018/DNWK4528.JPG' },
         ]
 
     return (
