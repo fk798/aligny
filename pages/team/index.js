@@ -4,6 +4,17 @@ import Navigation from '../../components/Navigation'
 import Footer from "../../components/Footer"
 import { Grid } from '@mui/material'
 import { Container } from '@mui/material'
+import React from 'react'
+
+function Member(props) {
+  return (
+    <React.Fragment>
+      <img src={props.link} height = "215"></img>
+      <p><b>{props.title}</b></p>
+      <p>{props.name}</p>
+    </React.Fragment>
+  )
+}
 
 export default function Team() {
   return (
@@ -19,24 +30,16 @@ export default function Team() {
         <div style={{textAlign: "center", paddingTop: "50px"}}>
           <Grid container spacing = {2}>
               <Grid item xs = {6}>
-                  <img src="https://s3.amazonaws.com/aaany-assets/images/team/usmani.jpg" height = "215"></img>
-                  <p><b>President</b></p>
-                  <p>Kauser Usmani</p>
+                <Member link = "https://s3.amazonaws.com/aaany-assets/images/team/usmani.jpg" title = "President" name = "Kauser Usmani"/>
               </Grid>
               <Grid item xs = {6}>
-                  <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiQ8bbQ4LHgAhXthOAKHR39CTkQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fblank%2F&psig=AOvVaw2na_Bn5FKR33fbLvxWzOvq&ust=1549908336506420" height = "215"></img>
-                  <p><b>Vice-President</b></p>
-                  <p>Shoaib Zahoori</p>
+                <Member link = "https://s3.amazonaws.com/aaany-assets/images/team/usmani.jpg" title = "Vice-President" name = "Shoaib Zahoori"/> 
               </Grid>
               <Grid item xs = {6}>
-                  <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiQ8bbQ4LHgAhXthOAKHR39CTkQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fblank%2F&psig=AOvVaw2na_Bn5FKR33fbLvxWzOvq&ust=1549908336506420"></img>
-                  <p><b>Secretary</b></p>
-                  <p>Hina Kausar</p>
+                <Member link = "https://s3.amazonaws.com/aaany-assets/images/team/usmani.jpg" title = "Secretary" name = "Hina Kausar"/>
               </Grid>
               <Grid item xs = {6}>
-                  <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiQ8bbQ4LHgAhXthOAKHR39CTkQjRx6BAgBEAU&url=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fblank%2F&psig=AOvVaw2na_Bn5FKR33fbLvxWzOvq&ust=1549908336506420"></img>
-                  <p><b>Treasurer</b></p>
-                  <p>Bushra Karim</p>
+                <Member link = "https://s3.amazonaws.com/aaany-assets/images/team/usmani.jpg" title = "Treasurer" name = "Bushra Karim"/>
               </Grid>
           </Grid>
         </div>
