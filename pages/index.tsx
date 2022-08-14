@@ -18,7 +18,9 @@ export default function Home() {
           Aligarh Alumni Association of New York (AAANY)
         </h1>
         <h3 style = {{textAlign: "center"}}>A Non-Profit 501(C)(3) Educational and Charitable Organization, Tax ID #13-4002794</h3>
-
+        <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/I5QtnY4PpJg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
+        <br></br>
+        <p style = {{textAlign: "center"}}><b>Sir Syed, Aligarh Muslim University, and the Aligarh Alumni Association</b></p>
         <p>Sir Syed Ahmad Khan was a reformist, thinker, philosopher, educationist of the nineteenth century British India and the architect of modern India. He was born in New Delhi on October 17, 1817.  He was well conversant in Urdu, Persian and Arabic. He started his career as a Civil servant in the court of Law, Agra in 1838. He graduated with a degree in law and judicial services from East India Company College.</p>
 
         <p>The aftermath of the Indian War of Independence of 1857 left Muslims economically weak and emotionally ripped. Sir Syed was saddened by the misery around him. He was quick to realize that education is the only key to success for Muslims.  He wanted them to get involved in public life and government services in India.</p>
