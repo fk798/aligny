@@ -35,6 +35,7 @@ export default function Home() {
 
         <div style = {{textAlign: "center", paddingTop: "50px", paddingBottom: "50px"}}>
           <h2>Upcoming Events</h2>
+          <img src = "https://aaany-assets.s3.amazonaws.com/images/Flyer-1.png" width = "50%" style = {{border: "5px solid #000"}}></img>
           <img src = "https://aaany-assets.s3.amazonaws.com/images/Invitation+to+SSD+Dinner+2022.png" width = "50%" style = {{border: "5px solid #000"}}></img>
         </div>
 
