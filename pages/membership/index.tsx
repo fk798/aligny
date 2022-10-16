@@ -23,8 +23,8 @@ export default function Membership() {
 
             <p>These are the two types of memberships:</p>
             <ul>
-                <li><b>Lifetime Member</b>: Free access to all AAANY activities and publications.</li>
-                <li><b>Regular Member</b>: Discounted prices on all AAANY activities and publications (One Year).</li>
+                <li><b>Lifetime Member</b>: Full access to all AAANY activities and publications for lifetime.</li>
+                <li><b>Regular Member</b>: Full access to AAANY activities and publications for one year.</li>
             </ul>
 
             <p>To become member, please email us at <a href = "mailto:aaany1017@gmail.com">aaany1017@gmail.com</a>.</p>
