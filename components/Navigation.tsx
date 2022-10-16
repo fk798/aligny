@@ -62,7 +62,7 @@ export default function Navigation() {
                     >
                         <MenuIcon />
                     </IconButton>*/}
-                    <Grid container spacing = {15} justifyContent = "center">
+                    <Grid container spacing = {10} justifyContent = "center">
                         <Grid item xs = "auto"><Link href = "/"><Button color="inherit">Home</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/about"><Button color="inherit">About</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/team"><Button color="inherit">Our Team</Button></Link></Grid>
@@ -78,6 +78,7 @@ export default function Navigation() {
                             <Link href="/publications/2021"><MenuItem onClick={handleCloseP}>2021</MenuItem></Link>
                             <Link href="/publications/2019"><MenuItem onClick={handleCloseP}>2019</MenuItem></Link>
                         </Menu>
+                        <Grid item xs = "auto"><Link href = "/ads"><Button color="inherit">Advertisements</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/donate"><Button color="inherit">Donate</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/membership"><Button color="inherit">Membership</Button></Link></Grid>
                     </Grid>
