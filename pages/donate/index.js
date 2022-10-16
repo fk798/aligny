@@ -13,7 +13,6 @@ export default function Donate() {
       </Head>
 
       <main>
-
         <Navigation></Navigation>
         <h1 className="title" style = {{textAlign: "center"}}>
           Donate

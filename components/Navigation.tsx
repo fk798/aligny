@@ -62,7 +62,7 @@ export default function Navigation() {
                     >
                         <MenuIcon />
                     </IconButton>*/}
-                    <Grid container spacing = {10} justifyContent = "center">
+                    <Grid container spacing = {5} justifyContent = "center">
                         <Grid item xs = "auto"><Link href = "/"><Button color="inherit">Home</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/about"><Button color="inherit">About</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/team"><Button color="inherit">Our Team</Button></Link></Grid>
