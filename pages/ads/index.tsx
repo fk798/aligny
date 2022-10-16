@@ -17,7 +17,7 @@ export default function Ads() {
         <Navigation />
         <h1 className="title" style = {{textAlign: "center"}}>For Advertisers:</h1>
         <div style = {{textAlign: "center", paddingBottom: "50px"}}>
-          <p>If you would like to advertise on our publications, please refer to the list below for our prices. Please email us <a href = "mailto:aaany1017@gmail.com">aaany1017@gmail.com</a> for more information.</p>
+          <p>If you would like to advertise on our magazine, please refer to the list below for our prices. Please email us <a href = "mailto:aaany1017@gmail.com">aaany1017@gmail.com</a> for more information.</p>
           <img src = "https://aaany-assets.s3.amazonaws.com/images/Tariff-AAANY-2022.png" width = "50%" style = {{border: "5px solid #000"}}></img>
         </div>
       </main>
