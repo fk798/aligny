@@ -81,6 +81,7 @@ export default function Navigation() {
                         <Grid item xs = "auto"><Link href = "/ads"><Button color="inherit">Advertisements</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/donate"><Button color="inherit">Donate</Button></Link></Grid>
                         <Grid item xs = "auto"><Link href = "/membership"><Button color="inherit">Membership</Button></Link></Grid>
+                        <Grid item xs = "auto"><Link href = "/archive"><Button color="inherit">Archive</Button></Link></Grid>
                     </Grid>
                     </Toolbar>
                 </AppBar>

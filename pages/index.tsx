@@ -38,12 +38,6 @@ export default function Home() {
           <img src = "https://aaany-assets.s3.amazonaws.com/images/Flyer-1.png" width = "50%" style = {{border: "5px solid #000"}}></img>
           <img src = "https://aaany-assets.s3.amazonaws.com/images/Invitation+to+SSD+Dinner+2022.png" width = "50%" style = {{border: "5px solid #000"}}></img>
         </div>
-
-        <div style = {{textAlign: "center"}}>
-          <h3>Reflections on COVID-19</h3>
-          <iframe width="600" height="400" src="https://www.youtube.com/embed/kmu5KfDaK6c" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-        </div>
-
       </main>
 
       <Footer />

@@ -27,7 +27,10 @@ export default function Membership() {
                 <li><b>Regular Member</b>: Full access to AAANY activities and publications for one year.</li>
             </ul>
 
-            <p>To become member, please email us at <a href = "mailto:aaany1017@gmail.com">aaany1017@gmail.com</a>.</p>
+            <p>To become a member, please fill out the form below and email us at <a href = "mailto:aaany1017@gmail.com">aaany1017@gmail.com</a>.</p>
+            <div style = {{textAlign: "center"}}>
+            <object data = "https://aaany-assets.s3.amazonaws.com/images/MembershipForm2022.pdf" width="800" height = "1000"></object>
+            </div>
       </main>
 
       <Footer />
