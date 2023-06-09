@@ -29,7 +29,7 @@ export default function Membership() {
 
             <p>To become a member, please fill out the form below and email us at <a href = "mailto:aaany1017@gmail.com">aaany1017@gmail.com</a>.</p>
             <div style = {{textAlign: "center"}}>
-            <object data = "https://aaany-assets.s3.amazonaws.com/images/MembershipForm2022.pdf" width="800" height = "1000"></object>
+            <object data = "https://aaany-assets.s3.amazonaws.com/images/MembershipForm2022_v01.pdf" width="800" height = "1000"></object>
             </div>
       </main>
 
