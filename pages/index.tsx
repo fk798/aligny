@@ -38,9 +38,17 @@ export default function Home() {
 
         <div style = {{textAlign: "center", paddingTop: "50px", paddingBottom: "50px"}}>
           <h2>Upcoming Events</h2>
-          <img src = "https://aaany-assets.s3.amazonaws.com/images/Flyer-1.png" width = "50%" style = {{border: "5px solid #000"}}></img>
           <br />
-          <img src = "https://aaany-assets.s3.amazonaws.com/images/Invitation+to+SSD+Dinner+2022.png" width = "50%" style = {{border: "5px solid #000"}}></img>
+          <img src = "/FAAA Banner.jpeg" width = "50%" style = {{border: "5px solid #000"}}></img>
+          <br />
+          <br />
+          <img src = "/FAAA Flyer.png" width = "50%" style = {{border: "5px solid #000"}}></img>
+          <br />
+          <br />
+          <img src = "/FAAA Tour.png" width = "50%" style = {{border: "5px solid #000"}}></img>
+          <br />
+          <br />
+          <img src = "/FAAA Registration.png" width = "50%" style = {{border: "5px solid #000"}}></img>
         </div>
       </main>
 
