@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Navigation from '../../components/Navigation'
 import Footer from '../../components/Footer'
-import { Container } from '@mui/material'
+import { Container } from 'react-bootstrap'
 
 export default function Donate() {
   return (

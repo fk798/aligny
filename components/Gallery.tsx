@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Carousel from "react-material-ui-carousel"
+import { Carousel } from "react-bootstrap";
 import Head from 'next/head'
 
 function Gallery(props) {
@@ -15,9 +15,9 @@ function Gallery(props) {
 
       <h1>{props.title}</h1>
       <br></br>
-      <Carousel autoPlay = {false} navButtonsAlwaysVisible={true} indicators = {false}>
+      <Carousel variant = "dark">
         {
-          images.map( (image) => <img src = {image.original} key = "image" alt = "image" style = {{width: "50%", maxWidth: "1000px"}} />)
+          images.map( (image) => <Carousel.Item><img src = {image.original} key = "image" alt = "image" style = {{width: "50%", maxWidth: "1000px"}} /></Carousel.Item>)
         }
       </Carousel>
     </React.Fragment>

@@ -1,12 +1,15 @@
+import React from "react"
 import Head from 'next/head'
 import Link from 'next/link'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
-import { Container } from '@mui/material'
+import { Container } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
   return (
-    <Container maxWidth = "xl">
+    <React.Fragment>
+    <Container>
       <Head>
         <title>AAANY</title>
         <link rel="icon" href="/favicon.ico" />
@@ -36,11 +39,13 @@ export default function Home() {
         <div style = {{textAlign: "center", paddingTop: "50px", paddingBottom: "50px"}}>
           <h2>Upcoming Events</h2>
           <img src = "https://aaany-assets.s3.amazonaws.com/images/Flyer-1.png" width = "50%" style = {{border: "5px solid #000"}}></img>
+          <br />
           <img src = "https://aaany-assets.s3.amazonaws.com/images/Invitation+to+SSD+Dinner+2022.png" width = "50%" style = {{border: "5px solid #000"}}></img>
         </div>
       </main>
 
       <Footer />
     </Container>
+    </React.Fragment>
   )
 }

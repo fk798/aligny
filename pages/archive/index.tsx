@@ -2,12 +2,11 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Navigation from '../../components/Navigation'
 import Footer from "../../components/Footer"
-import { Grid } from '@mui/material'
-import { Container } from '@mui/material'
+import { Container } from 'react-bootstrap'
 
 export default function Membership() {
   return (
-    <Container maxWidth = "xl">
+    <Container>
       <Head>
         <title>Our Team</title>
         <link rel="icon" href="/favicon.ico" />

@@ -2,7 +2,7 @@ import React from "react";
 import Gallery from "../../components/Gallery";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer";
-import { Container } from "@mui/material";
+import { Container } from 'react-bootstrap';
 
 
 export default function _2019() {
@@ -21,7 +21,7 @@ export default function _2019() {
         ]
 
     return (
-        <Container maxWidth = "xl">
+        <Container>
             <Navigation />
             <div style = {{textAlign: "center"}}>
                 <Gallery images = {images} title = "Sir Syed Day Mushaira 2019" year = "2019"></Gallery>
