@@ -4,6 +4,7 @@ import Navigation from '../../components/Navigation'
 import Footer from "../../components/Footer"
 import { Container, Row, Col } from 'react-bootstrap'
 import React from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Member(props) {
   return (

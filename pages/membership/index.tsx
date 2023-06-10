@@ -4,6 +4,7 @@ import Navigation from '../../components/Navigation'
 import Footer from "../../components/Footer"
 import { Grid } from '@mui/material'
 import { Container } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Membership() {
   return (

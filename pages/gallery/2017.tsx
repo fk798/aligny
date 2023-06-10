@@ -3,6 +3,7 @@ import Gallery from "../../components/Gallery";
 import Navigation from "../../components/Navigation";
 import Footer from "../../components/Footer"
 import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function _2017() {
