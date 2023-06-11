@@ -39,7 +39,7 @@ export default function Home() {
         <div style = {{textAlign: "center", paddingTop: "50px", paddingBottom: "50px"}}>
           <h2>Upcoming Events</h2>
           <br />
-          <img src = "/FAAA Banner.jpeg" width = "100%" style = {{border: "5px solid #000"}}></img>
+          <img src = "/FAAA Banner.jpeg" width = "80%" style = {{border: "5px solid #000"}}></img>
           <br />
           <br />
           <img src = "/FAAA Flyer.png" width = "50%" style = {{border: "5px solid #000"}}></img>
