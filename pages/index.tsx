@@ -45,6 +45,9 @@ export default function Home() {
           <img src = "/FAAA Flyer.png" width = "50%" style = {{border: "5px solid #000"}}></img>
           <br />
           <br />
+          <img src = "/FAAA Gala.png" width = "50%" style = {{border: "5px solid #000"}}></img>
+          <br />
+          <br />
           <img src = "/FAAA Tour.png" width = "50%" style = {{border: "5px solid #000"}}></img>
           <br />
           <br />
