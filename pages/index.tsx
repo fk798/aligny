@@ -38,7 +38,9 @@ export default function Home() {
 
         <div style = {{textAlign: "center", paddingTop: "50px", paddingBottom: "50px"}}>
           <h2>Upcoming Events</h2>
+          <img src = "/Flyer2023NY-1.png" width = "50%" style = {{border: "5px solid #000"}}></img>
           <br />
+          {/*<br />
           <img src = "/FAAA Banner.jpeg" width = "80%" style = {{border: "5px solid #000"}}></img>
           <br />
           <br />
@@ -52,7 +54,8 @@ export default function Home() {
           <br />
           <br />
           <img src = "/FAAA Registration.png" width = "50%" style = {{border: "5px solid #000"}}></img>
-        </div>
+          */}
+          </div>
       </main>
 
       <Footer />
