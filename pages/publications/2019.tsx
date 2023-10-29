@@ -12,7 +12,7 @@ export default function _2019() {
         <Container>
             <Navigation />
             <div style = {{textAlign: "center"}}>
-                <Publication pdfs = {pdfs} year = "2013"></Publication>
+                <Publication pdfs = {pdfs} year = "2019"></Publication>
             </div>
             <Footer />
         </Container>
