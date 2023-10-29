@@ -18,7 +18,7 @@ export default function Home() {
       <main>
         <Navigation />
         <div style = {{textAlign: "center", paddingTop: "25px", paddingBottom: "50px"}}>
-          <h2>Thank you for attending the 2024 AAANY Sir Syed Day Dinner and Mushaira!</h2>
+          <h2>Thank you for attending the 2023 AAANY Sir Syed Day Dinner and Mushaira!</h2>
           <br />
           <h3>Speeches and Awards</h3>
           <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/LVC9nlde-cQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
