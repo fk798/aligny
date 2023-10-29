@@ -6,13 +6,13 @@ import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-export default function _2019() {
-    const pdfs = [["Cover", "https://aaany-assets.s3.amazonaws.com/images/publications/2019/Title+Sir+Syed+Ahmad+2019.pdf"], ["English", "https://aaany-assets.s3.amazonaws.com/images/publications/2019/Eng.pdf"], ["Urdu", "https://aaany-assets.s3.amazonaws.com/images/publications/2019/Urdu.pdf"]]
+export default function _2022() {
+    const pdfs = [["Publication 2022", "https://aaany-assets.s3.amazonaws.com/images/publications/2023/SOUVENIR_pdfSTANDARDforEMAILING.pdf"]]
     return (
         <Container>
             <Navigation />
             <div style = {{textAlign: "center"}}>
-                <Publication pdfs = {pdfs} year = "2013"></Publication>
+                <Publication pdfs = {pdfs} year = "2022"></Publication>
             </div>
             <Footer />
         </Container>

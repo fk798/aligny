@@ -30,11 +30,12 @@ export default function Navigation() {
                         <Link href = "/about" passHref><Nav.Link>About</Nav.Link></Link>
                         <Link href = "/team" passHref><Nav.Link>Our Team</Nav.Link></Link>
                         <NavDropdown title="Gallery" id="basic-nav-dropdown">
-                            {/*<!--<NavDropdown.Item href="/gallery/2021">2022</NavDropdown.Item>*/}
                             <Link href = "/gallery/2021" passHref><NavDropdown.Item>
                                 2021
                             </NavDropdown.Item></Link>
-                            <Link href = "/gallery/2019" passHref><NavDropdown.Item>2019</NavDropdown.Item></Link>
+                            <Link href = "/gallery/2019" passHref><NavDropdown.Item>
+                                2019
+                            </NavDropdown.Item></Link>
                             <Link href = "/gallery/2018" passHref><NavDropdown.Item>
                                 2018
                             </NavDropdown.Item></Link>
@@ -44,7 +45,11 @@ export default function Navigation() {
                             </Link>
                         </NavDropdown>
                         <NavDropdown title="Publications" id="basic-nav-dropdown">
-                            {/*<!--<NavDropdown.Item href="/gallery/2021">2022</NavDropdown.Item>*/}
+                            <Link href = "/publications/2023" passHref><NavDropdown.Item>
+                                2023
+                            </NavDropdown.Item></Link><Link href = "/publications/2022" passHref><NavDropdown.Item>
+                                2022
+                            </NavDropdown.Item></Link>
                             <Link href = "/publications/2021" passHref><NavDropdown.Item>
                                 2021
                             </NavDropdown.Item></Link>
