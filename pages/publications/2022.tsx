@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 export default function _2022() {
-    const pdfs = [["Publication 2022", "https://aaany-assets.s3.amazonaws.com/images/publications/2023/SOUVENIR_pdfSTANDARDforEMAILING.pdf"]]
+    const pdfs = [["Publication 2022", "https://aaany-assets.s3.amazonaws.com/2022/publications/2022+Booklet.pdf"]]
     return (
         <Container>
             <Navigation />
