@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Link from "next/link";
 import { Container, Nav, Navbar, NavDropdown} from "react-bootstrap"
+import { DropdownSubmenu, NavDropdownMenu } from "react-bootstrap-submenu";
 
 export default function Navigation() {
     return (
@@ -44,17 +45,23 @@ export default function Navigation() {
                             </NavDropdown.Item>
                             </Link>
                         </NavDropdown>
-                        <NavDropdown title="Publications" id="basic-nav-dropdown">
-                            <Link href = "/publications/2023" passHref><NavDropdown.Item>
-                                2023
-                            </NavDropdown.Item></Link><Link href = "/publications/2022" passHref><NavDropdown.Item>
+                        <NavDropdownMenu title="Publications" id="collasible-nav-dropdown">
+                            <DropdownSubmenu title = "2023">
+                                <Link href = "/publications/2023/ssd" passHref><NavDropdown.Item>
+                                    Sir Syed Day 2023
+                                </NavDropdown.Item></Link>
+                                <Link href = "/publications/2023/faaa" passHref><NavDropdown.Item>
+                                    FAAA 2023
+                                </NavDropdown.Item></Link>
+                            </DropdownSubmenu>
+                            <Link href = "/publications/2022" passHref><NavDropdown.Item>
                                 2022
                             </NavDropdown.Item></Link>
                             <Link href = "/publications/2021" passHref><NavDropdown.Item>
                                 2021
                             </NavDropdown.Item></Link>
                             <Link href = "/publications/2019" passHref><NavDropdown.Item>2019</NavDropdown.Item></Link>
-                        </NavDropdown>
+                        </NavDropdownMenu>
                         <Link href = "/ads" passHref><Nav.Link>Advertisements</Nav.Link></Link>
                         <Link href = "/donate" passHref><Nav.Link>Donate</Nav.Link></Link>
                         <Link href = "/membership" passHref><Nav.Link>Membership</Nav.Link></Link>
@@ -63,6 +70,7 @@ export default function Navigation() {
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+            <br />
         </React.Fragment>
     )
 }

@@ -11,6 +11,7 @@ function Gallery(props) {
         </Head>
 
         <h1>The New York Alig Sir Syed Day Magazine {props.year}</h1>
+        <br />
         {props.pdfs.map((elem) => {
           return (
             <React.Fragment>
