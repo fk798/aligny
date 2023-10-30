@@ -30,7 +30,15 @@ export default function Navigation() {
                         <Link href = "/" passHref><Nav.Link>Home</Nav.Link></Link>
                         <Link href = "/about" passHref><Nav.Link>About</Nav.Link></Link>
                         <Link href = "/team" passHref><Nav.Link>Our Team</Nav.Link></Link>
-                        <NavDropdown title="Gallery" id="basic-nav-dropdown">
+                        <NavDropdownMenu title="Gallery" id="basic-nav-dropdown">
+                            <DropdownSubmenu title = "2023">
+                                <Link href = "/gallery/2023/ssd" passHref><NavDropdown.Item>
+                                    AAANY Sir Syed Day 2023
+                                </NavDropdown.Item></Link>
+                                <Link href = "/gallery/2023/faaa" passHref><NavDropdown.Item>
+                                    FAAA 2023
+                                </NavDropdown.Item></Link>
+                            </DropdownSubmenu>
                             <Link href = "/gallery/2021" passHref><NavDropdown.Item>
                                 2021
                             </NavDropdown.Item></Link>
@@ -44,11 +52,11 @@ export default function Navigation() {
                                 2017
                             </NavDropdown.Item>
                             </Link>
-                        </NavDropdown>
-                        <NavDropdownMenu title="Publications" id="collasible-nav-dropdown">
+                        </NavDropdownMenu>
+                        <NavDropdownMenu title="Publications" id="basic-nav-dropdown">
                             <DropdownSubmenu title = "2023">
                                 <Link href = "/publications/2023/ssd" passHref><NavDropdown.Item>
-                                    Sir Syed Day 2023
+                                    AAANY Sir Syed Day 2023
                                 </NavDropdown.Item></Link>
                                 <Link href = "/publications/2023/faaa" passHref><NavDropdown.Item>
                                     FAAA 2023
