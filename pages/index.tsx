@@ -18,6 +18,10 @@ export default function Home() {
       <main>
         <Navigation />
         <div style = {{textAlign: "center", paddingTop: "25px", paddingBottom: "50px"}}>
+          <h2>Come join us in Atlanta for FAAA Annual Convention!</h2>
+          <div style = {{textAlign: "center"}}><img src = "https://aaany-assets.s3.amazonaws.com/2024/IMG-20240629-WA0024.jpg"></img></div>
+          <p>Visit <a href = "http://aligs.org/">http://aligs.org/</a> to learn more and register for the event.</p>
+          <br />
           <h2>Thank you for attending the 2023 AAANY Sir Syed Day Dinner and Mushaira!</h2>
           <br />
           <h3>Speeches and Awards</h3>
