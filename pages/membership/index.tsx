@@ -4,7 +4,10 @@ import Navigation from '../../components/Navigation'
 import Footer from "../../components/Footer"
 import { Container } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
 import React from 'react'
+=======
+>>>>>>> 5e05a50a78866475a9d726cdd29180abfd184a92
 
 export default function Membership() {
   return (

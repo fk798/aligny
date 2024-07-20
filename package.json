@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "private": true,
   "scripts": {
     "build": "next build",
@@ -19,5 +20,26 @@
   "devDependencies": {
     "@types/node": "20.14.11",
     "typescript": "5.5.3"
+=======
+  "name": "learn-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.1",
+    "bootstrap": "^5.3.0",
+    "next": "^11.0.0",
+    "react": "17.0.2",
+    "react-bootstrap": "^2.7.4",
+    "react-bootstrap-submenu": "^3.0.3",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.4.3"
+>>>>>>> 5e05a50a78866475a9d726cdd29180abfd184a92
   }
 }
