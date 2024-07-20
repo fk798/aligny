@@ -1,7 +1,7 @@
 import React from "react";
-import Gallery from "../../components/Gallery";
-import Navigation from "../../components/Navigation";
-import Footer from "../../components/Footer";
+import Gallery from "../../../components/Gallery";
+import Navigation from "../../../components/Navigation";
+import Footer from "../../../components/Footer";
 import { Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
