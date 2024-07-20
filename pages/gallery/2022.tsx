@@ -142,7 +142,7 @@ export default function _2021() {
         <Container>
             <Navigation />
             <div style = {{textAlign: "center"}}>
-                <Gallery images = {images} title = "Sir Syed Day Mushaira 2021" year = "2021"></Gallery>
+                <Gallery images = {images} title = "Sir Syed Day Mushaira 2022" year = "2022"></Gallery>
             </div>
             <Footer />
         </Container>

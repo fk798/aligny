@@ -31,6 +31,11 @@ export default function Navigation() {
                         <Link href = "/about" passHref><Nav.Link>About</Nav.Link></Link>
                         <Link href = "/team" passHref><Nav.Link>Our Team</Nav.Link></Link>
                         <NavDropdownMenu title="Gallery" id="basic-nav-dropdown">
+                            <DropdownSubmenu title = "2024">
+                                <Link href = "/gallery/2024/picnic" passHref><NavDropdown.Item>
+                                    AAANY Picnic 2024
+                                </NavDropdown.Item></Link>
+                            </DropdownSubmenu>
                             <DropdownSubmenu title = "2023">
                                 <Link href = "/gallery/2023/ssd" passHref><NavDropdown.Item>
                                     AAANY Sir Syed Day 2023
