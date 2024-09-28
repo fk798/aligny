@@ -22,7 +22,7 @@ export default function Home() {
         <div style = {{textAlign: "center", paddingTop: "25px", paddingBottom: "50px"}}>
           
           <h2>Come join us for our annual 2024 Sir Syed Day Dinner and Grand International Mushaira!</h2>
-          <div style = {{textAlign: "center", width: "75%"}}><img src = "https://aaany-assets.s3.amazonaws.com/2024/flyer-2024.jpg"></img></div>
+          <div style = {{textAlign: "center"}}><img src = "https://aaany-assets.s3.amazonaws.com/2024/flyer-2024.jpg" width = "50%"></img></div>
           <br />
           <h2>Thank you for attending the 2023 AAANY Sir Syed Day Dinner and Mushaira!</h2>
           <br />
