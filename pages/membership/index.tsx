@@ -23,7 +23,7 @@ export default function Membership() {
             <p>The Aligarh Alumni Association of New York is geared towards achieving the goals of Sir Syed Ahmad Khan such as education and economic development of under-privileged communities, emphasis on modern scientific knowledge and work towards unity and harmony among different communities. In order to achieve those goals AAANY welcomes everyone to join our organization!</p>
             <p>To become a member, please fill out the form below and email us at <a href = "mailto:aaany1017@gmail.com">aaany1017@gmail.com</a>.</p>
             <div style = {{textAlign: "center"}}>
-            <object data = "https://aaany-assets.s3.amazonaws.com/files/MembershipForm_AAANY_2023.pdf" width="800" height = "1000"></object>
+            <object data = "https://aaany-assets.s3.amazonaws.com/2024/Membershi+Form+2024.pdf" width="800" height = "1000"></object>
             </div>
       </main>
 
