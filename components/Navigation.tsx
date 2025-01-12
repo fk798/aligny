@@ -30,6 +30,7 @@ export default function Navigation() {
                     <Nav className="m-auto">
                         <Link href = "/" legacyBehavior passHref><Nav.Link>Home</Nav.Link></Link>
                         <Link href = "/about" legacyBehavior passHref><Nav.Link>About</Nav.Link></Link>
+                        <Link href = "/constitution" legacyBehavior passHref><Nav.Link>Constitution</Nav.Link></Link>
                         <Link href = "/team" legacyBehavior passHref><Nav.Link>Our Team</Nav.Link></Link>
                         <NavDropdownMenu title="Gallery" id="basic-nav-dropdown">
                             <DropdownSubmenu title = "2024">
