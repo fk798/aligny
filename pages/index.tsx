@@ -21,10 +21,10 @@ export default function Home() {
         <Navigation />
         <div style = {{textAlign: "center", paddingTop: "25px", paddingBottom: "50px"}}>
           
-          <h2>Come join us for our annual 2024 Sir Syed Day Dinner and Grand International Mushaira!</h2>
-          <div style = {{textAlign: "center"}}><img src = "https://aaany-assets.s3.amazonaws.com/2024/flyer-2024.jpg" width = "50%"></img></div>
+          <h2>Come join us for our annual 2025 Sir Syed Day Dinner and Grand International Mushaira!</h2>
+          <div style = {{textAlign: "center"}}><img src = "https://aaany-assets.s3.us-east-1.amazonaws.com/2025/IMG-20251028-WA0002.jpg" width = "50%"></img></div>
           <br />
-          <h2>Thank you for attending the 2023 AAANY Sir Syed Day Dinner and Mushaira!</h2>
+          {/* <h2>Thank you for attending the 2023 AAANY Sir Syed Day Dinner and Mushaira!</h2>
           <br />
           <h3>Speeches and Awards</h3>
           <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/LVC9nlde-cQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
@@ -34,7 +34,7 @@ export default function Home() {
           <br />
           <h3>Flyer 2023</h3>
           <img src = "/flyerF2023NY-1.png" width = "50%" style = {{border: "5px solid #000"}}></img>
-          <br />
+          <br /> */}
         </div>
 
         <h2 style = {{textAlign: "center"}}>AAANY</h2>
