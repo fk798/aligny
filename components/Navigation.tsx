@@ -61,6 +61,9 @@ export default function Navigation() {
                             </Link>
                         </NavDropdownMenu>
                         <NavDropdownMenu title="Publications" id="basic-nav-dropdown">
+                            <Link href = "/publications/2024" legacyBehavior passHref><NavDropdown.Item>
+                                2024
+                            </NavDropdown.Item></Link>
                             <DropdownSubmenu title = "2023">
                                 <Link href = "/publications/2023/ssd" legacyBehavior passHref><NavDropdown.Item>
                                     AAANY Sir Syed Day 2023
