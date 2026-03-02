@@ -46,7 +46,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>&copy; {year} Aligarh Alumni Association of New York. All rights reserved.</p>
-        <p>Carrying forward the legacy of Sir Syed Ahmad Khan since 1998.</p>
+        <p>Made with ❤️ by Faisal</p>
       </div>
     </footer>
   );
