@@ -1,28 +1,52 @@
-import React, { Component } from "react";
-import { Carousel } from "react-bootstrap";
-import Head from 'next/head'
+import React from 'react';
+import Head from 'next/head';
+import { Carousel } from 'react-bootstrap';
 
-function Gallery(props) {
+interface GalleryProps {
+  images: Array<{ original: string }>;
+  title: string;
+  year?: string;
+}
 
-  const images = props.images
-
+export default function Gallery({ images, title, year }: GalleryProps) {
   return (
-    <React.Fragment>
+    <>
       <Head>
-        <title>Gallery {props.year}</title>
+        <title>{title} — AAANY Gallery</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <h1>{props.title}</h1>
-      <br></br>
-      <Carousel variant = "dark">
-        {
-          images.map( (image) => <Carousel.Item><img src = {image.original} key = "image" alt = "image" style = {{width: "50%", maxWidth: "1000px"}} /></Carousel.Item>)
-        }
-      </Carousel>
-    </React.Fragment>
+      <div className="page-header">
+        <div className="container-aaany">
+          <span className="section-label">Gallery{year ? ` · ${year}` : ''}</span>
+          <h1>{title}</h1>
+        </div>
+      </div>
+
+      <section className="section">
+        <div className="container-aaany">
+          <Carousel variant="dark" indicators={true} interval={4000}>
+            {images.map((image, idx) => (
+              <Carousel.Item key={idx}>
+                <div style={{ display: 'flex', justifyContent: 'center', padding: '1rem 0' }}>
+                  <img 
+                    src={image.original} 
+                    alt={`${title} - Photo ${idx + 1}`} 
+                    className="gallery-carousel"
+                    style={{ 
+                      maxWidth: '100%', 
+                      maxHeight: '70vh', 
+                      objectFit: 'contain',
+                      borderRadius: '8px',
+                      boxShadow: 'var(--shadow-md)'
+                    }} 
+                  />
+                </div>
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </div>
+      </section>
+    </>
   );
 }
-
-
-export default Gallery;

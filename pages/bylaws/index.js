@@ -1,35 +1,56 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Navigation from '../../components/Navigation'
-import Footer from '../../components/Footer'
-import { Container } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import Head from 'next/head';
+import Navigation from '../../components/Navigation';
+import Footer from '../../components/Footer';
 
 export default function Bylaws() {
   return (
-    <Container maxWidth = "xl">
+    <>
       <Head>
-        <title>Constitution and Bylaws of AAANY</title>
+        <title>Constitution &amp; Bylaws — AAANY</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Navigation></Navigation>
-        <h1 className="title" style = {{textAlign: "center"}}>
-        Constitution and Bylaws of AAANY
-        </h1>
-        <div style = {{textAlign: "center"}}>
-            <h3>Constitution and Bylaws</h3>
-            <object data = "https://aaany-assets.s3.us-east-1.amazonaws.com/files/bylaws-min.pdf" width="800" height = "1000"></object>
-            </div>
-        <div style = {{textAlign: "center"}}>
-            <h3>Amendments</h3>
-            <object data = "https://aaany-assets.s3.us-east-1.amazonaws.com/files/Amendments_to_the_Constitution_and_ByLaws_of_AAA_NYTri-State+2011.pdf" width="800" height = "1000"></object>
-            </div>
-      </main>
+      <Navigation />
+
+      <div className="page-header">
+        <div className="container-aaany">
+          <span className="section-label">Governance</span>
+          <h1>Constitution &amp; Bylaws</h1>
+        </div>
+      </div>
+
+      <div className="content-section" style={{ maxWidth: '900px' }}>
+        <h3 style={{ marginBottom: '1rem' }}>Constitution and Bylaws</h3>
+        <object 
+          data="https://aaany-assets.s3.us-east-1.amazonaws.com/files/bylaws-min.pdf" 
+          type="application/pdf"
+          className="pdf-embed"
+        >
+          <p>
+            Unable to display PDF.{' '}
+            <a href="https://aaany-assets.s3.us-east-1.amazonaws.com/files/bylaws-min.pdf" target="_blank" rel="noopener noreferrer">
+              Download here
+            </a>.
+          </p>
+        </object>
+
+        <h3 style={{ marginTop: '3rem', marginBottom: '1rem' }}>Amendments</h3>
+        <object 
+          data="https://aaany-assets.s3.us-east-1.amazonaws.com/files/Amendments_to_the_Constitution_and_ByLaws_of_AAA_NYTri-State+2011.pdf" 
+          type="application/pdf"
+          className="pdf-embed"
+        >
+          <p>
+            Unable to display PDF.{' '}
+            <a href="https://aaany-assets.s3.us-east-1.amazonaws.com/files/Amendments_to_the_Constitution_and_ByLaws_of_AAA_NYTri-State+2011.pdf" target="_blank" rel="noopener noreferrer">
+              Download here
+            </a>.
+          </p>
+        </object>
+      </div>
 
       <Footer />
-
-    </Container>
-  )
+    </>
+  );
 }

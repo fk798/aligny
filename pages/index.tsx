@@ -1,67 +1,170 @@
-import React from "react"
-import Head from 'next/head'
-import Link from 'next/link'
-import Navigation from '../components/Navigation'
-import Footer from '../components/Footer'
-import { Container } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import dynamic from 'next/dynamic'
-//const Navigation = dynamic(() => import('../components/Navigation'), { ssr: false });
+import React from 'react';
+import Head from 'next/head';
+import Link from 'next/link';
+import Navigation from '../components/Navigation';
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <React.Fragment>
-    <Container>
+    <>
       <Head>
-        <title>AAANY</title>
+        <title>AAANY — Aligarh Alumni Association of New York</title>
+        <meta name="description" content="The Aligarh Alumni Association of New York — a 501(C)(3) non-profit carrying forward Sir Syed Ahmad Khan's vision of education, community, and service." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Navigation />
-        <div style = {{textAlign: "center", paddingTop: "25px", paddingBottom: "50px"}}>
-          
-          <h2>Come join us for our annual 2025 Sir Syed Day Dinner and Grand International Mushaira!</h2>
-          <div style = {{textAlign: "center"}}><img src = "https://aaany-assets.s3.us-east-1.amazonaws.com/2025/IMG-20251106-WA0075.jpg" width = "50%"></img></div>
-          <br />
-          {/* <h2>Thank you for attending the 2023 AAANY Sir Syed Day Dinner and Mushaira!</h2>
-          <br />
-          <h3>Speeches and Awards</h3>
-          <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/LVC9nlde-cQ" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
-          <br />
-          <h3>Mushaira</h3>
-          <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/TfoBoE1hPlE" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
-          <br />
-          <h3>Flyer 2023</h3>
-          <img src = "/flyerF2023NY-1.png" width = "50%" style = {{border: "5px solid #000"}}></img>
-          <br /> */}
+      <Navigation />
+
+      {/* ── Hero ── */}
+      <section className="hero">
+        <div className="hero-content">
+          <span className="hero-label animate-in">Est. 1998 · New York City</span>
+          <h1 className="animate-in animate-delay-1">
+            Aligarh Alumni<br />Association of <em>New York</em>
+          </h1>
+          <p className="hero-subtitle animate-in animate-delay-2">
+            Carrying forward Sir Syed Ahmad Khan&apos;s enduring mission of 
+            education, unity, and service — from Aligarh to the world.
+          </p>
+          <div className="hero-cta-group animate-in animate-delay-3">
+            <Link href="/membership" className="btn btn-primary">Become a Member</Link>
+            <Link href="/about" className="btn btn-outline">Learn More</Link>
+          </div>
         </div>
+      </section>
 
-        <h2 style = {{textAlign: "center"}}>AAANY</h2>
-          <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/I5QtnY4PpJg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
-        <br></br>
-        <p style = {{textAlign: "center"}}><b>Sir Syed, Aligarh Muslim University, and the Aligarh Alumni Association</b></p>
-        <p>Sir Syed Ahmad Khan was a reformist, thinker, philosopher, educationist of the nineteenth century British India and the architect of modern India. He was born in New Delhi on October 17, 1817.  He was well conversant in Urdu, Persian and Arabic. He started his career as a Civil servant in the court of Law, Agra in 1838. He graduated with a degree in law and judicial services from East India Company College.</p>
+      {/* ── Upcoming Event Banner ── */}
+      <section className="section-sm" style={{ background: 'var(--color-bg)' }}>
+        <div className="container-aaany">
+          <div className="event-banner">
+            <div className="event-banner-inner">
+              <img 
+                src="https://aaany-assets.s3.us-east-1.amazonaws.com/2025/IMG-20251106-WA0075.jpg" 
+                alt="2025 Sir Syed Day Dinner and Grand International Mushaira"
+                className="event-banner-image"
+              />
+              <div className="event-banner-content">
+                <span className="section-label">Upcoming Event</span>
+                <h2>2025 Sir Syed Day Dinner &amp; Grand International Mushaira</h2>
+                <hr className="gold-line-left" />
+                <p>
+                  Join us for our annual celebration honoring the legacy of Sir Syed Ahmad Khan, 
+                  featuring distinguished speakers, awards, and an evening of Urdu poetry 
+                  with renowned poets from around the world.
+                </p>
+                <div style={{ display: 'flex', gap: '0.75rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
+                  <Link href="/membership" className="btn btn-green">Register Now</Link>
+                  <Link href="/donate" className="btn" style={{ border: '2px solid var(--color-border)', color: 'var(--color-text)' }}>Support the Event</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <p>The aftermath of the Indian War of Independence of 1857 left Muslims economically weak and emotionally ripped. Sir Syed was saddened by the misery around him. He was quick to realize that education is the only key to success for Muslims.  He wanted them to get involved in public life and government services in India.</p>
+      {/* ── About AAANY + Video ── */}
+      <section className="about-section section">
+        <div className="container-aaany">
+          <div className="about-grid">
+            <div className="about-video">
+              <iframe 
+                src="https://www.youtube.com/embed/I5QtnY4PpJg" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen 
+                title="AAANY Video"
+              />
+            </div>
+            <div>
+              <span className="section-label">Our Story</span>
+              <h2>Sir Syed, AMU &amp; the Alumni Legacy</h2>
+              <hr className="gold-line-left" />
+              <p>
+                Sir Syed Ahmad Khan — reformist, philosopher, and architect of modern Indian 
+                education — founded the Muhammadan Anglo Oriental College in Aligarh in 1877, 
+                modeled after Oxford and Cambridge. It became Aligarh Muslim University in 1920 
+                and stands today as one of India&apos;s top-ranked institutions.
+              </p>
+              <p>
+                AMU&apos;s alumni span the globe, united by Sir Syed&apos;s mission of peace, 
+                education, and humility. AAANY, founded in 1998, brings that spirit to 
+                New York — organizing cultural events, supporting students, and keeping the 
+                Aligarh torch burning bright.
+              </p>
+              <Link href="/about" className="btn btn-green" style={{ marginTop: '0.5rem' }}>Read Our Full Story</Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <p>He founded the Muhammadan Anglo Oriental (MAO) College in Aligarh in 1877 in line with Oxford and Cambridge universities, England. This was the first residential educational institution setup by the government in India.</p>
+      {/* ── Mission Pillars ── */}
+      <section className="section" style={{ background: 'var(--color-bg)' }}>
+        <div className="container-aaany" style={{ textAlign: 'center' }}>
+          <span className="section-label">What We Do</span>
+          <h2>Our Mission</h2>
+          <hr className="gold-line" />
+          <p style={{ maxWidth: '600px', margin: '0 auto 3rem' }}>
+            AAANY is a non-political, non-profit, educational, cultural, and secular 
+            organization serving AMU alumni and well-wishers in the New York area.
+          </p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+            
+            <div className="card-aaany" style={{ textAlign: 'left' }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>🎤</div>
+              <h3>Mushaira</h3>
+              <p>
+                Annual Urdu poetry recitations on Sir Syed Day, featuring local and 
+                international poets in a celebration of literary heritage.
+              </p>
+            </div>
 
-        <p>At the start the college was affiliated with the University of Calcutta. Later, it was affiliated with the University of Allahabad in 1885. The MAO College was eventually renamed as Aligarh Muslim University in 1920.</p>
+            <div className="card-aaany" style={{ textAlign: 'left' }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>🏆</div>
+              <h3>Sir Syed Awards</h3>
+              <p>
+                Lifetime achievement awards recognizing outstanding individuals who 
+                embody the vision and contributions of Sir Syed Ahmad Khan.
+              </p>
+            </div>
 
-        <p>Sir Syed died on March 27, 1898. He was buried in the premises of the University Mosque in the Sir Syed Hall of AMU.</p>
+            <div className="card-aaany" style={{ textAlign: 'left' }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.75rem' }}>📖</div>
+              <h3>Annual Magazine</h3>
+              <p>
+                The New York Alig — our annual publication documenting the work, 
+                stories, and contributions of the AAANY community.
+              </p>
+            </div>
 
-        <p>AMU is considered as one of the top ranked universities in India. Its alumni are spread across the world in different countries working under organizations and associations The Alumni remain connected to AMU and try to follow the dream of Sir Syed. Today. Sir Syed’s mission of peace, education and humility is visible globally. The Alumni remain the torch bearers!</p>
+          </div>
+        </div>
+      </section>
 
-        <h1 className="title" style = {{textAlign: "center"}}>
-          Aligarh Alumni Association of New York (AAANY)
-        </h1>
-        <h3 style = {{textAlign: "center"}}>A Non-Profit 501(C)(3) Educational and Charitable Organization, Tax ID #13-4002794</h3>
-
-      </main>
+      {/* ── 501(c)(3) Strip ── */}
+      <section style={{ 
+        background: 'var(--color-primary)', 
+        color: '#fff', 
+        padding: '2.5rem 0',
+        textAlign: 'center' 
+      }}>
+        <div className="container-aaany">
+          <p style={{ 
+            fontFamily: 'var(--font-display)', 
+            fontSize: 'clamp(1rem, 2.5vw, 1.35rem)', 
+            fontWeight: 500,
+            color: '#fff',
+            margin: 0,
+            lineHeight: 1.5 
+          }}>
+            Aligarh Alumni Association of New York — A Non-Profit 501(C)(3) Educational 
+            and Charitable Organization
+          </p>
+          <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.85rem', margin: '0.5rem 0 0' }}>
+            Tax ID #13-4002794
+          </p>
+        </div>
+      </section>
 
       <Footer />
-    </Container>
-    </React.Fragment>
-  )
+    </>
+  );
 }

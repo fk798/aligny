@@ -1,94 +1,89 @@
-import * as React from 'react';
-import Link from "next/link";
-import { Container, Nav, Navbar, NavDropdown} from "react-bootstrap"
-import { DropdownSubmenu, NavDropdownMenu } from "react-bootstrap-submenu";
-import dynamic from 'next/dynamic'
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+
+function NavDropdown({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <li className="nav-dropdown">
+      <span className="nav-link-item">{label} ▾</span>
+      <div className="nav-dropdown-menu">
+        {children}
+      </div>
+    </li>
+  );
+}
 
 export default function Navigation() {
-    return (
-        <React.Fragment>
-            <Container>
-                <Container>
-                    <a href = "/"><img src = "https://aaany-assets.s3.amazonaws.com/images/logo1.png" height = "200" style ={{paddingBottom: "10px"}}></img></a>
-                </Container>
-                <Container>
-                    <div style = {{textAlign: "center", position: "relative", top: "40%", left: "50%", transform: "translate(-50%, -50%)"}}>
-                    <h1>
-                    Aligarh Alumni Association 
-                    </h1>
-                    <h1>
-                    of New York
-                    </h1>
-                    </div>
-                </Container>
-            </Container>
-            <Navbar bg="light" expand="lg">
-                <Container>
-                    <Link href = "/" legacyBehavior passHref><Navbar.Brand>AAANY</Navbar.Brand></Link>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="m-auto">
-                        <Link href = "/" legacyBehavior passHref><Nav.Link>Home</Nav.Link></Link>
-                        <Link href = "/about" legacyBehavior passHref><Nav.Link>About</Nav.Link></Link>
-                        <Link href = "/bylaws" legacyBehavior passHref><Nav.Link>Bylaws</Nav.Link></Link>
-                        <Link href = "/team" legacyBehavior passHref><Nav.Link>Our Team</Nav.Link></Link>
-                        <NavDropdownMenu title="Gallery" id="basic-nav-dropdown">
-                            <DropdownSubmenu title = "2024">
-                                <Link href = "/gallery/2024/picnic" legacyBehavior passHref><NavDropdown.Item>
-                                    AAANY Picnic 2024
-                                </NavDropdown.Item></Link>
-                            </DropdownSubmenu>
-                            <DropdownSubmenu title = "2023">
-                                <Link href = "/gallery/2023/ssd" legacyBehavior passHref><NavDropdown.Item>
-                                    AAANY Sir Syed Day 2023
-                                </NavDropdown.Item></Link>
-                                <Link href = "/gallery/2023/faaa" legacyBehavior passHref><NavDropdown.Item>
-                                    FAAA 2023
-                                </NavDropdown.Item></Link>
-                            </DropdownSubmenu>
-                            <Link href = "/gallery/2021" legacyBehavior passHref><NavDropdown.Item>
-                                2021
-                            </NavDropdown.Item></Link>
-                            <Link href = "/gallery/2019" legacyBehavior passHref><NavDropdown.Item>
-                                2019
-                            </NavDropdown.Item></Link>
-                            <Link href = "/gallery/2018" legacyBehavior passHref><NavDropdown.Item>
-                                2018
-                            </NavDropdown.Item></Link>
-                            <Link href = "/gallery/2017" legacyBehavior passHref><NavDropdown.Item>
-                                2017
-                            </NavDropdown.Item>
-                            </Link>
-                        </NavDropdownMenu>
-                        <NavDropdownMenu title="Publications" id="basic-nav-dropdown">
-                            <Link href = "/publications/2024" legacyBehavior passHref><NavDropdown.Item>
-                                2024
-                            </NavDropdown.Item></Link>
-                            <DropdownSubmenu title = "2023">
-                                <Link href = "/publications/2023/ssd" legacyBehavior passHref><NavDropdown.Item>
-                                    AAANY Sir Syed Day 2023
-                                </NavDropdown.Item></Link>
-                                <Link href = "/publications/2023/faaa" legacyBehavior passHref><NavDropdown.Item>
-                                    FAAA 2023
-                                </NavDropdown.Item></Link>
-                            </DropdownSubmenu>
-                            <Link href = "/publications/2022" legacyBehavior passHref><NavDropdown.Item>
-                                2022
-                            </NavDropdown.Item></Link>
-                            <Link href = "/publications/2021" legacyBehavior passHref><NavDropdown.Item>
-                                2021
-                            </NavDropdown.Item></Link>
-                            <Link href = "/publications/2019" legacyBehavior passHref><NavDropdown.Item>2019</NavDropdown.Item></Link>
-                        </NavDropdownMenu>
-                        <Link href = "/ads" legacyBehavior passHref><Nav.Link>Advertisements</Nav.Link></Link>
-                        <Link href = "/donate" legacyBehavior passHref><Nav.Link>Donate</Nav.Link></Link>
-                        <Link href = "/membership" legacyBehavior passHref><Nav.Link>Membership</Nav.Link></Link>
-                        <Link href = "/archive" legacyBehavior passHref><Nav.Link>Archive</Nav.Link></Link>
-                    </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-            <br />
-        </React.Fragment>
-    )
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [menuOpen]);
+
+  return (
+    <nav className="nav-wrapper">
+      <div className="nav-inner">
+        <Link href="/" className="nav-brand">
+          <img 
+            src="https://aaany-assets.s3.amazonaws.com/images/logo1.png" 
+            alt="AAANY Logo" 
+          />
+          <div className="nav-brand-text">
+            <span className="nav-brand-name">Aligarh Alumni</span>
+            <span className="nav-brand-sub">Association of New York</span>
+          </div>
+        </Link>
+
+        <button 
+          className="nav-mobile-toggle" 
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul className={`nav-links${menuOpen ? ' open' : ''}`}>
+          <li><Link href="/" onClick={() => setMenuOpen(false)}>Home</Link></li>
+          <li><Link href="/about" onClick={() => setMenuOpen(false)}>About</Link></li>
+          <li><Link href="/team" onClick={() => setMenuOpen(false)}>Our Team</Link></li>
+          
+          <NavDropdown label="Gallery">
+            <span className="nav-dropdown-label">2024</span>
+            <Link href="/gallery/2024/picnic" onClick={() => setMenuOpen(false)}>AAANY Picnic</Link>
+            <span className="nav-dropdown-label">2023</span>
+            <Link href="/gallery/2023/ssd" onClick={() => setMenuOpen(false)}>Sir Syed Day</Link>
+            <Link href="/gallery/2023/faaa" onClick={() => setMenuOpen(false)}>FAAA Convention</Link>
+            <span className="nav-dropdown-label">Earlier</span>
+            <Link href="/gallery/2022" onClick={() => setMenuOpen(false)}>2022</Link>
+            <Link href="/gallery/2021" onClick={() => setMenuOpen(false)}>2021</Link>
+            <Link href="/gallery/2019" onClick={() => setMenuOpen(false)}>2019</Link>
+            <Link href="/gallery/2018" onClick={() => setMenuOpen(false)}>2018</Link>
+            <Link href="/gallery/2017" onClick={() => setMenuOpen(false)}>2017</Link>
+          </NavDropdown>
+
+          <NavDropdown label="Publications">
+            <Link href="/publications/2024" onClick={() => setMenuOpen(false)}>2024</Link>
+            <span className="nav-dropdown-label">2023</span>
+            <Link href="/publications/2023/ssd" onClick={() => setMenuOpen(false)}>Sir Syed Day</Link>
+            <Link href="/publications/2023/faaa" onClick={() => setMenuOpen(false)}>FAAA Convention</Link>
+            <span className="nav-dropdown-label">Earlier</span>
+            <Link href="/publications/2022" onClick={() => setMenuOpen(false)}>2022</Link>
+            <Link href="/publications/2021" onClick={() => setMenuOpen(false)}>2021</Link>
+            <Link href="/publications/2019" onClick={() => setMenuOpen(false)}>2019</Link>
+          </NavDropdown>
+
+          <li><Link href="/ads" onClick={() => setMenuOpen(false)}>Ads</Link></li>
+          <li><Link href="/bylaws" onClick={() => setMenuOpen(false)}>Bylaws</Link></li>
+          <li><Link href="/archive" onClick={() => setMenuOpen(false)}>Archive</Link></li>
+          <li><Link href="/donate" onClick={() => setMenuOpen(false)} className="nav-cta">Donate</Link></li>
+        </ul>
+      </div>
+    </nav>
+  );
 }

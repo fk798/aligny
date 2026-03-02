@@ -1,35 +1,51 @@
-import React from "react";
-import Gallery from "../../../components/Gallery";
-import Navigation from "../../../components/Navigation";
-import Footer from "../../../components/Footer";
-import { Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import Head from 'next/head';
+import Navigation from '../../../components/Navigation';
+import Footer from '../../../components/Footer';
 
+const videos = [
+  { title: 'Tarana', id: '-3ZSbaY5gyI' },
+  { title: 'Day 1', id: 'WK-3bqOtks0' },
+  { title: 'Day 2', id: 'ijkcN36_Pl8' },
+];
 
 export default function FAAA() {
+  return (
+    <>
+      <Head>
+        <title>FAAA Convention 2023 — AAANY</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-    const images = [
-        
-        ]
+      <Navigation />
 
-    return (
-        <Container>
-            <Navigation />
-            <div style = {{textAlign: "center"}}>
-                <h1>FAAA XXII Annual Convention 2023 Videos</h1>
-                <br />
-                <h3>Tarana</h3>
-                <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/-3ZSbaY5gyI" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
-                <br />
-                <h3>Day 1</h3>
-                <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/WK-3bqOtks0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
-                <br />
-                <h3>Day 2</h3>
-                <div style = {{textAlign: "center"}}><iframe src="https://www.youtube.com/embed/ijkcN36_Pl8" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style = {{width: "600px", height: "400px"}}></iframe></div>
-                <br />
-                <Gallery images = {images} title = "FAAA XXII Annual Convention 2023" year = "2023"></Gallery>
+      <div className="page-header">
+        <div className="container-aaany">
+          <span className="section-label">Gallery</span>
+          <h1>FAAA XXII Annual Convention 2023</h1>
+          <p>Federation of Aligarh Alumni Associations — hosted in New York</p>
+        </div>
+      </div>
+
+      <section className="section">
+        <div className="container-aaany" style={{ textAlign: 'center' }}>
+          {videos.map((video, i) => (
+            <div key={i} style={{ marginBottom: '3rem' }}>
+              <h3 style={{ marginBottom: '1rem' }}>{video.title}</h3>
+              <div className="video-wrapper">
+                <iframe
+                  src={`https://www.youtube.com/embed/${video.id}`}
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title={video.title}
+                />
+              </div>
             </div>
-            <Footer />
-        </Container>
-    )
+          ))}
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
 }
