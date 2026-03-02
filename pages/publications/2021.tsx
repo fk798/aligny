@@ -4,7 +4,7 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
 export default function Publication2021() {
-  const pdfs = [['Publication 2021', 'https://aaany-assets.s3.amazonaws.com/images/publications/2021/Revised+Booklet.pdf']];
+  const pdfs: [string, string][] = [['Publication 2021', 'https://aaany-assets.s3.amazonaws.com/images/publications/2021/Revised+Booklet.pdf']];
 
   return (
     <>

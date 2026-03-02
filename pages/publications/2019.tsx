@@ -4,7 +4,7 @@ import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 
 export default function Publication2019() {
-  const pdfs = [
+  const pdfs: [string, string][] = [
     ['Cover', 'https://aaany-assets.s3.amazonaws.com/images/publications/2019/Title+Sir+Syed+Ahmad+2019.pdf'],
     ['English', 'https://aaany-assets.s3.amazonaws.com/images/publications/2019/Eng.pdf'],
     ['Urdu', 'https://aaany-assets.s3.amazonaws.com/images/publications/2019/Urdu.pdf'],
