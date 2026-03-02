@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import Head from 'next/head';
-import { Carousel } from 'react-bootstrap';
 
 interface GalleryProps {
   images: Array<{ original: string }>;
@@ -9,6 +8,29 @@ interface GalleryProps {
 }
 
 export default function Gallery({ images, title, year }: GalleryProps) {
+  const [current, setCurrent] = useState(0);
+  const total = images.length;
+
+  const prev = useCallback(() => {
+    setCurrent((c) => (c === 0 ? total - 1 : c - 1));
+  }, [total]);
+
+  const next = useCallback(() => {
+    setCurrent((c) => (c === total - 1 ? 0 : c + 1));
+  }, [total]);
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowLeft') prev();
+      if (e.key === 'ArrowRight') next();
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [prev, next]);
+
+  if (total === 0) return null;
+
   return (
     <>
       <Head>
@@ -25,26 +47,37 @@ export default function Gallery({ images, title, year }: GalleryProps) {
 
       <section className="section">
         <div className="container-aaany">
-          <Carousel variant="dark" indicators={true} interval={4000}>
-            {images.map((image, idx) => (
-              <Carousel.Item key={idx}>
-                <div style={{ display: 'flex', justifyContent: 'center', padding: '1rem 0' }}>
-                  <img 
-                    src={image.original} 
-                    alt={`${title} - Photo ${idx + 1}`} 
-                    className="gallery-carousel"
-                    style={{ 
-                      maxWidth: '100%', 
-                      maxHeight: '70vh', 
-                      objectFit: 'contain',
-                      borderRadius: '8px',
-                      boxShadow: 'var(--shadow-md)'
-                    }} 
-                  />
+          <div className="carousel">
+            <div className="carousel-viewport">
+              <img
+                src={images[current].original}
+                alt={`${title} - Photo ${current + 1}`}
+                className="carousel-image"
+              />
+            </div>
+
+            {total > 1 && (
+              <>
+                <button
+                  className="carousel-btn carousel-btn-prev"
+                  onClick={prev}
+                  aria-label="Previous photo"
+                >
+                  ‹
+                </button>
+                <button
+                  className="carousel-btn carousel-btn-next"
+                  onClick={next}
+                  aria-label="Next photo"
+                >
+                  ›
+                </button>
+                <div className="carousel-counter">
+                  {current + 1} / {total}
                 </div>
-              </Carousel.Item>
-            ))}
-          </Carousel>
+              </>
+            )}
+          </div>
         </div>
       </section>
     </>
